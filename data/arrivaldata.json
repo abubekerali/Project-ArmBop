@@ -1,0 +1,5702 @@
+var dataset = [
+  {
+    "callsign": "DLH1445 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUDD",
+    "icao24": "3c648b"
+  },
+  {
+    "callsign": "DLH8CH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6663"
+  },
+  {
+    "callsign": "WZZ131  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBSF",
+    "icao24": "471f68"
+  },
+  {
+    "callsign": "RJA125  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OJAI",
+    "icao24": "740730"
+  },
+  {
+    "callsign": "EZY131Z ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "440380"
+  },
+  {
+    "callsign": "DLH47E  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFML",
+    "icao24": "3c6749"
+  },
+  {
+    "callsign": "DLH9YX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5461"
+  },
+  {
+    "callsign": null,
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c5467"
+  },
+  {
+    "callsign": "DLH8RJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "3c65c1"
+  },
+  {
+    "callsign": "PGT47F  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4b8e0f"
+  },
+  {
+    "callsign": "RZO560  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4a09ab"
+  },
+  {
+    "callsign": "CFG033  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KSEA",
+    "icao24": "3c4aa2"
+  },
+  {
+    "callsign": "CFG455  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYVR",
+    "icao24": "3c4ab4"
+  },
+  {
+    "callsign": "DLH6JV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6648"
+  },
+  {
+    "callsign": "DLH3LY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c66b0"
+  },
+  {
+    "callsign": "DLH8EJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EIBA",
+    "icao24": "3c6757"
+  },
+  {
+    "callsign": "DLH32T  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "3c65c9"
+  },
+  {
+    "callsign": "DLH307  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LICC",
+    "icao24": "3c6637"
+  },
+  {
+    "callsign": "DLH7H   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65c6"
+  },
+  {
+    "callsign": null,
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6592"
+  },
+  {
+    "callsign": "DLH7C   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "3c6667"
+  },
+  {
+    "callsign": "DLH3W   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBMB",
+    "icao24": "3c6635"
+  },
+  {
+    "callsign": "DLH91H  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c6489"
+  },
+  {
+    "callsign": "DLH3F   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6668"
+  },
+  {
+    "callsign": "DLH9JT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "3c6488"
+  },
+  {
+    "callsign": "DLH5AC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESGG",
+    "icao24": "3c65c4"
+  },
+  {
+    "callsign": "DLH837  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKVD",
+    "icao24": "3c5465"
+  },
+  {
+    "callsign": "RYR17VZ ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4ca93d"
+  },
+  {
+    "callsign": "CFG1DA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "3c49e6"
+  },
+  {
+    "callsign": "DLH1EK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPWA",
+    "icao24": "3c6650"
+  },
+  {
+    "callsign": "DLH6KF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6666"
+  },
+  {
+    "callsign": "DLH4RK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6662"
+  },
+  {
+    "callsign": "DLH9KW  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c66a3"
+  },
+  {
+    "callsign": "DCBBS   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDMO",
+    "icao24": "3cc2d0"
+  },
+  {
+    "callsign": "DLH1P   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LKPR",
+    "icao24": "3c6621"
+  },
+  {
+    "callsign": "DLH25M  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFHC",
+    "icao24": "3c6614"
+  },
+  {
+    "callsign": "DLH1CJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDC",
+    "icao24": "3c5467"
+  },
+  {
+    "callsign": "AUA253  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWG",
+    "icao24": "440828"
+  },
+  {
+    "callsign": "DLH2LY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "3c66a5"
+  },
+  {
+    "callsign": "DLH3KX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPZ",
+    "icao24": "3c6592"
+  },
+  {
+    "callsign": "DLH3VR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDV",
+    "icao24": "3c658b"
+  },
+  {
+    "callsign": "CFG5VM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBWN",
+    "icao24": "3c6468"
+  },
+  {
+    "callsign": "DLH72T  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFBO",
+    "icao24": "3c6750"
+  },
+  {
+    "callsign": "DLH039  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6613"
+  },
+  {
+    "callsign": "DLH4LX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6664"
+  },
+  {
+    "callsign": "DLH695  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6670"
+  },
+  {
+    "callsign": "DLH8EK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c648c"
+  },
+  {
+    "callsign": "DLH4PF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c65c2"
+  },
+  {
+    "callsign": "DLH8EK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMC",
+    "icao24": "3c648c"
+  },
+  {
+    "callsign": "DLH19P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c6643"
+  },
+  {
+    "callsign": "AEE13   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LGAV",
+    "icao24": "4690f4"
+  },
+  {
+    "callsign": "DLH8JT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6645"
+  },
+  {
+    "callsign": "DAL4    ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KJFK",
+    "icao24": "a12fcf"
+  },
+  {
+    "callsign": null,
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c648e"
+  },
+  {
+    "callsign": "DLH7PX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDN",
+    "icao24": "3c6586"
+  },
+  {
+    "callsign": "DLH5HR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c6444"
+  },
+  {
+    "callsign": "DLH3LX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIAU",
+    "icao24": "3c6604"
+  },
+  {
+    "callsign": "DLH8PF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c666a"
+  },
+  {
+    "callsign": "DLH8VR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c648e"
+  },
+  {
+    "callsign": "DLH3EJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LMML",
+    "icao24": "3c66ad"
+  },
+  {
+    "callsign": "DLH9AA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6491"
+  },
+  {
+    "callsign": "DLH1UV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDS",
+    "icao24": "3c66a2"
+  },
+  {
+    "callsign": "DLH62Y  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFNY",
+    "icao24": "3c66a4"
+  },
+  {
+    "callsign": "ACA874  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYUL",
+    "icao24": "c058be"
+  },
+  {
+    "callsign": "DLH4TN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPWA",
+    "icao24": "3c66a7"
+  },
+  {
+    "callsign": "DLH1FL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c661a"
+  },
+  {
+    "callsign": "DLH99P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFML",
+    "icao24": "3c648a"
+  },
+  {
+    "callsign": "DLH7AC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6655"
+  },
+  {
+    "callsign": "DLH9XV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "3c6598"
+  },
+  {
+    "callsign": "DLH9MC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6635"
+  },
+  {
+    "callsign": "DLH585  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c666c"
+  },
+  {
+    "callsign": "DLH7WT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LYNS",
+    "icao24": "3c6758"
+  },
+  {
+    "callsign": "DLH4HP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGBB",
+    "icao24": "3c6626"
+  },
+  {
+    "callsign": "DLH4MA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c644a"
+  },
+  {
+    "callsign": "DLH87Y  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFBO",
+    "icao24": "3c66a9"
+  },
+  {
+    "callsign": "DLH4CF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LGAV",
+    "icao24": "3c6667"
+  },
+  {
+    "callsign": "ADR6K   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LJLJ",
+    "icao24": "506c21"
+  },
+  {
+    "callsign": "DLH1305 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LTBW",
+    "icao24": "3c6747"
+  },
+  {
+    "callsign": "DLH8VT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMC",
+    "icao24": "3c658b"
+  },
+  {
+    "callsign": "DLH1493 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6666"
+  },
+  {
+    "callsign": "DLH7EM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6676"
+  },
+  {
+    "callsign": "DLH3Y   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBBR",
+    "icao24": "3c6449"
+  },
+  {
+    "callsign": "DLH1K   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSGG",
+    "icao24": "3c5461"
+  },
+  {
+    "callsign": null,
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDOQ",
+    "icao24": "3c4dc6"
+  },
+  {
+    "callsign": "DLH5NC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c6654"
+  },
+  {
+    "callsign": "DLH173  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6662"
+  },
+  {
+    "callsign": "DLH5PF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBSF",
+    "icao24": "3c65c6"
+  },
+  {
+    "callsign": "DLH613  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c666f"
+  },
+  {
+    "callsign": "DLH1EL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPZ",
+    "icao24": "3c66ae"
+  },
+  {
+    "callsign": "DLH1VR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKVD",
+    "icao24": "3c66a5"
+  },
+  {
+    "callsign": "DLH1439 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ULLI",
+    "icao24": "3c664d"
+  },
+  {
+    "callsign": "DLH8F   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6448"
+  },
+  {
+    "callsign": "DLH561  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6573"
+  },
+  {
+    "callsign": "DLH2YY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDS",
+    "icao24": "3c65c4"
+  },
+  {
+    "callsign": "DLH1489 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UMLI",
+    "icao24": "3c5467"
+  },
+  {
+    "callsign": "DLH351  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDW",
+    "icao24": "3c5464"
+  },
+  {
+    "callsign": "DLH3FL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LROP",
+    "icao24": "3c66a1"
+  },
+  {
+    "callsign": "DLH073  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c6628"
+  },
+  {
+    "callsign": "DLH5KW  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDC",
+    "icao24": "3c6592"
+  },
+  {
+    "callsign": "DLH7P   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LKPR",
+    "icao24": "3c6664"
+  },
+  {
+    "callsign": "DLH889  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EYVI",
+    "icao24": "3c65c8"
+  },
+  {
+    "callsign": "DLH02K  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOLW",
+    "icao24": "3c5468"
+  },
+  {
+    "callsign": "DLH3TN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6663"
+  },
+  {
+    "callsign": "DLH143  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDN",
+    "icao24": "3c658e"
+  },
+  {
+    "callsign": "DLH569  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6566"
+  },
+  {
+    "callsign": "ETD9929 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "896441"
+  },
+  {
+    "callsign": "DLH601  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4ad0"
+  },
+  {
+    "callsign": "BCS126  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDP",
+    "icao24": "3c5428"
+  },
+  {
+    "callsign": "CFG143  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c49e3"
+  },
+  {
+    "callsign": "DLH919  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65c3"
+  },
+  {
+    "callsign": "DLH3RX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMC",
+    "icao24": "3c6659"
+  },
+  {
+    "callsign": "CFG7MA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "3c49ec"
+  },
+  {
+    "callsign": "TAP572C ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "495285"
+  },
+  {
+    "callsign": "TUI1HB  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4969"
+  },
+  {
+    "callsign": "TUI1PK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPFR",
+    "icao24": "3c0a02"
+  },
+  {
+    "callsign": "CFG1DY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIEO",
+    "icao24": "3c6426"
+  },
+  {
+    "callsign": "IBE31AV ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "34241a"
+  },
+  {
+    "callsign": "DLH3ML  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6655"
+  },
+  {
+    "callsign": "DLH53P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "3c6678"
+  },
+  {
+    "callsign": "CFG3VK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6468"
+  },
+  {
+    "callsign": "DLH9YJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6750"
+  },
+  {
+    "callsign": "CFG031  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c49eb"
+  },
+  {
+    "callsign": "SXD8CY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c0a43"
+  },
+  {
+    "callsign": "DLH4PJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c658d"
+  },
+  {
+    "callsign": "DLH42K  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMG",
+    "icao24": "3c648c"
+  },
+  {
+    "callsign": "DLH8PK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6650"
+  },
+  {
+    "callsign": "TUI3JH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c0c9e"
+  },
+  {
+    "callsign": "RYR85VQ ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "4ca97c"
+  },
+  {
+    "callsign": "DLH3EN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLC",
+    "icao24": "3c5462"
+  },
+  {
+    "callsign": "CFE1DG  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLC",
+    "icao24": "406b6c"
+  },
+  {
+    "callsign": "SAA261  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "00b0eb"
+  },
+  {
+    "callsign": "CFG8PK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LICJ",
+    "icao24": "503da6"
+  },
+  {
+    "callsign": "DLH7A   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6677"
+  },
+  {
+    "callsign": "BAW916N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "400938"
+  },
+  {
+    "callsign": "DLA77W  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPX",
+    "icao24": "30055b"
+  },
+  {
+    "callsign": "RYR45VH ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPFR",
+    "icao24": "4cab99"
+  },
+  {
+    "callsign": "DLH44M  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEVC",
+    "icao24": "3c6491"
+  },
+  {
+    "callsign": "CCA935  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RJBB",
+    "icao24": "780092"
+  },
+  {
+    "callsign": "RYR13KU ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEAL",
+    "icao24": "4ca93d"
+  },
+  {
+    "callsign": "DLH171  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6590"
+  },
+  {
+    "callsign": "AUA127F ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "440c8d"
+  },
+  {
+    "callsign": "RYR43AD ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "4ca37e"
+  },
+  {
+    "callsign": "DLH28W  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c667a"
+  },
+  {
+    "callsign": "DLH9EP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c66ac"
+  },
+  {
+    "callsign": "DLH3CT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6749"
+  },
+  {
+    "callsign": "DLH1JE  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c66ae"
+  },
+  {
+    "callsign": "DLH4RV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "3c661a"
+  },
+  {
+    "callsign": "DLH805  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "3c6757"
+  },
+  {
+    "callsign": "DLH59H  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c6487"
+  },
+  {
+    "callsign": "DLH8XA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGPH",
+    "icao24": "3c674e"
+  },
+  {
+    "callsign": "DLH819  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESGG",
+    "icao24": "3c6637"
+  },
+  {
+    "callsign": "DLH7KH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c660d"
+  },
+  {
+    "callsign": "TUI106D ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c0d03"
+  },
+  {
+    "callsign": "RYR79SV ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "4cacab"
+  },
+  {
+    "callsign": "DLH6HX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPWA",
+    "icao24": "3c6671"
+  },
+  {
+    "callsign": "DLH4C   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6655"
+  },
+  {
+    "callsign": "DLH1CM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6645"
+  },
+  {
+    "callsign": "CFG2WF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDFH",
+    "icao24": "3c49e1"
+  },
+  {
+    "callsign": "DLH1RP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EIDW",
+    "icao24": "3c6666"
+  },
+  {
+    "callsign": "DLH5XY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c65c9"
+  },
+  {
+    "callsign": "DLH21X  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFBO",
+    "icao24": "3c6444"
+  },
+  {
+    "callsign": "DLH9WA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMF",
+    "icao24": "3c5466"
+  },
+  {
+    "callsign": "DLH1FY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6672"
+  },
+  {
+    "callsign": "DLH947  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGCC",
+    "icao24": "3c66af"
+  },
+  {
+    "callsign": "DLH8LC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c66a4"
+  },
+  {
+    "callsign": "DLH2RM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c658e"
+  },
+  {
+    "callsign": "DLH7ML  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPKK",
+    "icao24": "3c66a5"
+  },
+  {
+    "callsign": "DLH3UT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c6449"
+  },
+  {
+    "callsign": "DLH3NE  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBSF",
+    "icao24": "3c6621"
+  },
+  {
+    "callsign": "DLH9FP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c674f"
+  },
+  {
+    "callsign": "DLH7AF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5464"
+  },
+  {
+    "callsign": "DLH2VC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGBB",
+    "icao24": "3c6488"
+  },
+  {
+    "callsign": "DLH26N  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFBD",
+    "icao24": "3c6588"
+  },
+  {
+    "callsign": "DLH8U   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65c5"
+  },
+  {
+    "callsign": "CTN414  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LDZA",
+    "icao24": "501d18"
+  },
+  {
+    "callsign": "AFL2304 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUEE",
+    "icao24": "424395"
+  },
+  {
+    "callsign": "THY1GY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LTBA",
+    "icao24": "4baa4f"
+  },
+  {
+    "callsign": "DLH6EM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LGAV",
+    "icao24": "3c664e"
+  },
+  {
+    "callsign": "CFG9EW  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6423"
+  },
+  {
+    "callsign": "FDX36   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGSS",
+    "icao24": "a6a728"
+  },
+  {
+    "callsign": "DLH8ET  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "3c666a"
+  },
+  {
+    "callsign": "AUA257  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWG",
+    "icao24": "440828"
+  },
+  {
+    "callsign": "DLH9JL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "300557"
+  },
+  {
+    "callsign": "DLH2F   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c65c2"
+  },
+  {
+    "callsign": "DLH4K   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSGG",
+    "icao24": "34530e"
+  },
+  {
+    "callsign": "DLH9925 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c664c"
+  },
+  {
+    "callsign": "RYR30VH ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4ca376"
+  },
+  {
+    "callsign": "DLH7VX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPE",
+    "icao24": "3c6592"
+  },
+  {
+    "callsign": "SIA326  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "76ceee"
+  },
+  {
+    "callsign": "SVA935  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "VHHH",
+    "icao24": "4b846d"
+  },
+  {
+    "callsign": "EIN65A  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EIDW",
+    "icao24": "4ca770"
+  },
+  {
+    "callsign": "DLH8PV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6663"
+  },
+  {
+    "callsign": "DLH1449 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUDD",
+    "icao24": "3c6654"
+  },
+  {
+    "callsign": "DLH5PL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6662"
+  },
+  {
+    "callsign": "DLH1LN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c644a"
+  },
+  {
+    "callsign": "DLH6LR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6652"
+  },
+  {
+    "callsign": "GEC8291 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c706a"
+  },
+  {
+    "callsign": "DLH6YC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6626"
+  },
+  {
+    "callsign": "DLH2KY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LROP",
+    "icao24": "3c66b0"
+  },
+  {
+    "callsign": "DLH1VU  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5461"
+  },
+  {
+    "callsign": "RYR875V ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGCC",
+    "icao24": "4ca1ba"
+  },
+  {
+    "callsign": "SWR1076 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "4b1616"
+  },
+  {
+    "callsign": "DLH4PH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LMML",
+    "icao24": "3c66aa"
+  },
+  {
+    "callsign": "DLH42A  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "3c666c"
+  },
+  {
+    "callsign": "DLH897  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EYVI",
+    "icao24": "3c66a9"
+  },
+  {
+    "callsign": "DLH4LC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6635"
+  },
+  {
+    "callsign": "DLH72J  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c675a"
+  },
+  {
+    "callsign": "DLH329  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPZ",
+    "icao24": "3c66a7"
+  },
+  {
+    "callsign": "DLH3KA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6664"
+  },
+  {
+    "callsign": "ADR4K   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LJLJ",
+    "icao24": "506c22"
+  },
+  {
+    "callsign": "DLH7W   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBBR",
+    "icao24": "3c6598"
+  },
+  {
+    "callsign": "DLH8A   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "3c6604"
+  },
+  {
+    "callsign": "DLH3P   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LKPR",
+    "icao24": "3c6676"
+  },
+  {
+    "callsign": "DLH6V   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "3c6613"
+  },
+  {
+    "callsign": "DLH8WY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDC",
+    "icao24": "3c6614"
+  },
+  {
+    "callsign": "DLH1YF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDS",
+    "icao24": "3c5463"
+  },
+  {
+    "callsign": "DLH1437 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ULLI",
+    "icao24": "3c6643"
+  },
+  {
+    "callsign": "DLH12T  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c66a8"
+  },
+  {
+    "callsign": "AUA269  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWS",
+    "icao24": "440826"
+  },
+  {
+    "callsign": "DLH583  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6669"
+  },
+  {
+    "callsign": "DLH7K   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSGG",
+    "icao24": "3c658c"
+  },
+  {
+    "callsign": "DLH687  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c648d"
+  },
+  {
+    "callsign": "DLH3H   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65ca"
+  },
+  {
+    "callsign": "DLH935  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLC",
+    "icao24": "3c5468"
+  },
+  {
+    "callsign": "BAW914N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "4008f2"
+  },
+  {
+    "callsign": "DLH1301 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LTBA",
+    "icao24": "3c66a2"
+  },
+  {
+    "callsign": "DLH1495 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c66a1"
+  },
+  {
+    "callsign": "SAS1635 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "478387"
+  },
+  {
+    "callsign": "DLH1307 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c648e"
+  },
+  {
+    "callsign": "DLH9KX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EFHK",
+    "icao24": "3c6747"
+  },
+  {
+    "callsign": "BCS6259 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "3c542f"
+  },
+  {
+    "callsign": "DLH2UC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6750"
+  },
+  {
+    "callsign": "DLH085  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c5465"
+  },
+  {
+    "callsign": "ASL90C  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4c01e3"
+  },
+  {
+    "callsign": "DLH8EN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6650"
+  },
+  {
+    "callsign": "EZY604Q ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "440309"
+  },
+  {
+    "callsign": "SAS673  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "4ac9e3"
+  },
+  {
+    "callsign": "AZA410  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "4caa1a"
+  },
+  {
+    "callsign": "DLH961  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGPF",
+    "icao24": "3c6628"
+  },
+  {
+    "callsign": "AUA125F ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "440052"
+  },
+  {
+    "callsign": "EZY453M ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "502cb2"
+  },
+  {
+    "callsign": "DLH28H  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "3c6619"
+  },
+  {
+    "callsign": "LAN704  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "e80450"
+  },
+  {
+    "callsign": "DLH883  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EETN",
+    "icao24": "3c65c7"
+  },
+  {
+    "callsign": "STQ444  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDGJ",
+    "icao24": "3cdbba"
+  },
+  {
+    "callsign": "CFG293  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4aad"
+  },
+  {
+    "callsign": "FDX3    ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "abed10"
+  },
+  {
+    "callsign": "UAE6RA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OMDB",
+    "icao24": "8963f7"
+  },
+  {
+    "callsign": "DLH713  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RKSI",
+    "icao24": "3c651a"
+  },
+  {
+    "callsign": "DLH7PH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6648"
+  },
+  {
+    "callsign": "DLH9MA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "3c66ad"
+  },
+  {
+    "callsign": "LOT3ZC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPWA",
+    "icao24": "48ae81"
+  },
+  {
+    "callsign": "LDM317  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "4ca37d"
+  },
+  {
+    "callsign": "RAM810D ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "020113"
+  },
+  {
+    "callsign": "DLH786  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c64ef"
+  },
+  {
+    "callsign": "TAP576N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPAR",
+    "icao24": "495224"
+  },
+  {
+    "callsign": "RYR81HY ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPH",
+    "icao24": "4cabc0"
+  },
+  {
+    "callsign": "DLH54M  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c664d"
+  },
+  {
+    "callsign": "DLH1159 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c66a3"
+  },
+  {
+    "callsign": "AMC328  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LMML",
+    "icao24": "4d2190"
+  },
+  {
+    "callsign": "BAW912N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "40601f"
+  },
+  {
+    "callsign": "DLH1163 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPFR",
+    "icao24": "3c6667"
+  },
+  {
+    "callsign": "DLH3CJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6646"
+  },
+  {
+    "callsign": "DLH729  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c65ab"
+  },
+  {
+    "callsign": "LLX5233 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "503c61"
+  },
+  {
+    "callsign": "DLH717  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4b31"
+  },
+  {
+    "callsign": "THA926  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "885172"
+  },
+  {
+    "callsign": "AIC121  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "VIDP",
+    "icao24": "8005f1"
+  },
+  {
+    "callsign": "AUA18A  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "440669"
+  },
+  {
+    "callsign": "DLH9EL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6674"
+  },
+  {
+    "callsign": "DLH2VX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6677"
+  },
+  {
+    "callsign": "SXS86J  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4bcde3"
+  },
+  {
+    "callsign": "DLH4H   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65c6"
+  },
+  {
+    "callsign": "AAR7951 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "71be18"
+  },
+  {
+    "callsign": "KLM1773 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "4855d1"
+  },
+  {
+    "callsign": "KZR921  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4844a0"
+  },
+  {
+    "callsign": "DLH9XY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6650"
+  },
+  {
+    "callsign": "FIN7RA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EFHK",
+    "icao24": "461f96"
+  },
+  {
+    "callsign": "DLH1488 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c5467"
+  },
+  {
+    "callsign": "DLH9CH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6749"
+  },
+  {
+    "callsign": "DLH783  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64c3"
+  },
+  {
+    "callsign": "SVR717  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ULLI",
+    "icao24": "424914"
+  },
+  {
+    "callsign": "SXS93E  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LTBJ",
+    "icao24": "4bccba"
+  },
+  {
+    "callsign": "ELY355  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "73806f"
+  },
+  {
+    "callsign": "BTI6JK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EVRA",
+    "icao24": "502cd0"
+  },
+  {
+    "callsign": "CFG1MW  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c49ea"
+  },
+  {
+    "callsign": "DLH829  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6586"
+  },
+  {
+    "callsign": "DLH5MA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c65c3"
+  },
+  {
+    "callsign": "        ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6614"
+  },
+  {
+    "callsign": "AEA1509 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3444c3"
+  },
+  {
+    "callsign": "AFL2656 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUEE",
+    "icao24": "42434d"
+  },
+  {
+    "callsign": "SXD4PT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c0a45"
+  },
+  {
+    "callsign": "CCA931  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KJFK",
+    "icao24": "78076d"
+  },
+  {
+    "callsign": "DLH09T  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6444"
+  },
+  {
+    "callsign": "BAW910N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "400940"
+  },
+  {
+    "callsign": "DLH9KV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LGAV",
+    "icao24": "3c6675"
+  },
+  {
+    "callsign": "GEC8227 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KDFW",
+    "icao24": "3c706d"
+  },
+  {
+    "callsign": "DLH4KY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "30055b"
+  },
+  {
+    "callsign": "DLH2RK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c648a"
+  },
+  {
+    "callsign": "TUA461  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "601834"
+  },
+  {
+    "callsign": "SXS1    ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4bcca4"
+  },
+  {
+    "callsign": "THY6HS  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4ba92c"
+  },
+  {
+    "callsign": "DLH9AF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6672"
+  },
+  {
+    "callsign": "DLH6PH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6645"
+  },
+  {
+    "callsign": "SVR787  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUDD",
+    "icao24": "424278"
+  },
+  {
+    "callsign": "DLH2ER  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c658b"
+  },
+  {
+    "callsign": "AEE530  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4690f1"
+  },
+  {
+    "callsign": "KAL905  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RKSI",
+    "icao24": "71be31"
+  },
+  {
+    "callsign": "FFD525  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3cf571"
+  },
+  {
+    "callsign": "JAL407  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "86e4b8"
+  },
+  {
+    "callsign": "ROT305F ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LROP",
+    "icao24": "4a08e8"
+  },
+  {
+    "callsign": "DLH5KF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c660d"
+  },
+  {
+    "callsign": "DLH786  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64ef"
+  },
+  {
+    "callsign": "SWR1074 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4b17f9"
+  },
+  {
+    "callsign": "AZA6BF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "4ca82e"
+  },
+  {
+    "callsign": "AAR541  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RKSI",
+    "icao24": "71be26"
+  },
+  {
+    "callsign": "DLH09J  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6593"
+  },
+  {
+    "callsign": "DLH111  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6652"
+  },
+  {
+    "callsign": "DLH3NF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPZ",
+    "icao24": "3c66ae"
+  },
+  {
+    "callsign": "DLH1AE  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESGG",
+    "icao24": "3c658d"
+  },
+  {
+    "callsign": "DLH8CN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPE",
+    "icao24": "3c6583"
+  },
+  {
+    "callsign": "DLH57P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBB",
+    "icao24": "3c6448"
+  },
+  {
+    "callsign": "LLX5234 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "503c61"
+  },
+  {
+    "callsign": "DLH9C   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6598"
+  },
+  {
+    "callsign": "AUA131F ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "440669"
+  },
+  {
+    "callsign": "DLH8NH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6655"
+  },
+  {
+    "callsign": "DLH68W  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c65c1"
+  },
+  {
+    "callsign": "DLH3CH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LDZA",
+    "icao24": "34530e"
+  },
+  {
+    "callsign": "DLH1425 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5467"
+  },
+  {
+    "callsign": "DLH992  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6610"
+  },
+  {
+    "callsign": "CFG4861 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDV",
+    "icao24": "3c6426"
+  },
+  {
+    "callsign": "DLH8EM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMF",
+    "icao24": "3c5464"
+  },
+  {
+    "callsign": "DLH1323 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "DTTA",
+    "icao24": "3c666a"
+  },
+  {
+    "callsign": "ANA223  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "867fc6"
+  },
+  {
+    "callsign": "DLH1491 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c661a"
+  },
+  {
+    "callsign": "DLH2YC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6662"
+  },
+  {
+    "callsign": "DLH1317 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6614"
+  },
+  {
+    "callsign": "DLH4RM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6589"
+  },
+  {
+    "callsign": "DLH58H  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "3c6488"
+  },
+  {
+    "callsign": "DLH1433 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ULLI",
+    "icao24": "3c6653"
+  },
+  {
+    "callsign": "DLH955  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGBB",
+    "icao24": "3c674e"
+  },
+  {
+    "callsign": "DLH9WT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LROP",
+    "icao24": "3c66af"
+  },
+  {
+    "callsign": "AUA255  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWG",
+    "icao24": "440828"
+  },
+  {
+    "callsign": "DLH1U   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65c4"
+  },
+  {
+    "callsign": "DLH5J   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6489"
+  },
+  {
+    "callsign": "DLH5P   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LKPR",
+    "icao24": "3c6678"
+  },
+  {
+    "callsign": "DLH1153 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "3c6676"
+  },
+  {
+    "callsign": "DLH5KA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c6604"
+  },
+  {
+    "callsign": "DLH05E  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMG",
+    "icao24": "3c6659"
+  },
+  {
+    "callsign": "DLH52T  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEVC",
+    "icao24": "3c6635"
+  },
+  {
+    "callsign": "DLH38P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "3c6750"
+  },
+  {
+    "callsign": "DLA26RA ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPX",
+    "icao24": "300557"
+  },
+  {
+    "callsign": "DLH6PF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBSF",
+    "icao24": "3c66a7"
+  },
+  {
+    "callsign": "DLH979  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EIDW",
+    "icao24": "3c6664"
+  },
+  {
+    "callsign": "DLH891  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EVRA",
+    "icao24": "3c66a5"
+  },
+  {
+    "callsign": "DLH803  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "3c6626"
+  },
+  {
+    "callsign": "DLH881  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EETN",
+    "icao24": "3c6666"
+  },
+  {
+    "callsign": "DLH6LY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c658c"
+  },
+  {
+    "callsign": "TAM8070 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "SBGR",
+    "icao24": "e4818a"
+  },
+  {
+    "callsign": "DLH9MK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c667a"
+  },
+  {
+    "callsign": "DLH6KV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EFHK",
+    "icao24": "3c674f"
+  },
+  {
+    "callsign": "DLH1MC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDS",
+    "icao24": "3c66ac"
+  },
+  {
+    "callsign": "RYR102A ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "4ca97c"
+  },
+  {
+    "callsign": "DLH1441 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUDD",
+    "icao24": "3c656e"
+  },
+  {
+    "callsign": "DLH85N  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c6487"
+  },
+  {
+    "callsign": "CFG441  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c4ab3"
+  },
+  {
+    "callsign": "DLH543  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64ec"
+  },
+  {
+    "callsign": "DLH7LC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5468"
+  },
+  {
+    "callsign": "DLH3EL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDC",
+    "icao24": "3c658e"
+  },
+  {
+    "callsign": "DLH8CH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6648"
+  },
+  {
+    "callsign": "UAL926  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KSFO",
+    "icao24": "a31a2d"
+  },
+  {
+    "callsign": "DLH499  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4b2f"
+  },
+  {
+    "callsign": "AHO975Z ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLF",
+    "icao24": "3c564f"
+  },
+  {
+    "callsign": "DLH887  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EYVI",
+    "icao24": "3c6613"
+  },
+  {
+    "callsign": "RYR72AZ ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4ca79a"
+  },
+  {
+    "callsign": "DLH35M  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPP",
+    "icao24": "3c6449"
+  },
+  {
+    "callsign": "DLH1KW  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c65c9"
+  },
+  {
+    "callsign": "DLH741  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RJBB",
+    "icao24": "3c4acf"
+  },
+  {
+    "callsign": "DLH721  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6518"
+  },
+  {
+    "callsign": "RJA125  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "740730"
+  },
+  {
+    "callsign": "DAH2070 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "0a007a"
+  },
+  {
+    "callsign": "LZB437  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBSF",
+    "icao24": "451d8c"
+  },
+  {
+    "callsign": "KAL529  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUEE",
+    "icao24": "71c075"
+  },
+  {
+    "callsign": "SAS93M  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "45ac45"
+  },
+  {
+    "callsign": "SVA167  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "71005e"
+  },
+  {
+    "callsign": "WZZ131  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBSF",
+    "icao24": "471f71"
+  },
+  {
+    "callsign": "RYR694Y ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEZL",
+    "icao24": "4ca93d"
+  },
+  {
+    "callsign": "TUI7BW  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6305"
+  },
+  {
+    "callsign": "UAE9746 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "896171"
+  },
+  {
+    "callsign": "DLH5U   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65ca"
+  },
+  {
+    "callsign": "KLM23X  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "48548d"
+  },
+  {
+    "callsign": "IBE3128 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "342441"
+  },
+  {
+    "callsign": "DLH7EK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGCC",
+    "icao24": "3c6621"
+  },
+  {
+    "callsign": "DLH7MA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "3c66a9"
+  },
+  {
+    "callsign": "THY7RZ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4baa54"
+  },
+  {
+    "callsign": "DLH501  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4b2d"
+  },
+  {
+    "callsign": "DLH2KX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6677"
+  },
+  {
+    "callsign": "TUI1TK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c0a02"
+  },
+  {
+    "callsign": "QTR8221 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OTBD",
+    "icao24": "06a1ea"
+  },
+  {
+    "callsign": "DLH8XV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6646"
+  },
+  {
+    "callsign": "EZY131Z ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "440380"
+  },
+  {
+    "callsign": "CFG8VX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "503da6"
+  },
+  {
+    "callsign": "RYR103U ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LELC",
+    "icao24": "4ca37e"
+  },
+  {
+    "callsign": "RYR67SZ ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "4ca376"
+  },
+  {
+    "callsign": "MSR785  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "0101b9"
+  },
+  {
+    "callsign": "FCB378  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4c8064"
+  },
+  {
+    "callsign": "AZA408  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "4ca9e3"
+  },
+  {
+    "callsign": "BRU893  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "510080"
+  },
+  {
+    "callsign": "ETD7    ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "8961a6"
+  },
+  {
+    "callsign": "RYR558Q ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "4cab99"
+  },
+  {
+    "callsign": "DLH9YX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5461"
+  },
+  {
+    "callsign": "VJT448  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGWU",
+    "icao24": "4d20e9"
+  },
+  {
+    "callsign": "SWR1072 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "4b19e8"
+  },
+  {
+    "callsign": "DLH1AC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6650"
+  },
+  {
+    "callsign": "DLH8RJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "3c66b0"
+  },
+  {
+    "callsign": "DLH2YA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6598"
+  },
+  {
+    "callsign": "PGT47F  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4b8510"
+  },
+  {
+    "callsign": "DLH433  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KORD",
+    "icao24": "3c4b2c"
+  },
+  {
+    "callsign": "BAW904N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "400a26"
+  },
+  {
+    "callsign": "CFG091  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4aac"
+  },
+  {
+    "callsign": "GEC8401 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c70c5"
+  },
+  {
+    "callsign": "RYR6J   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LGAV",
+    "icao24": "4ca1ba"
+  },
+  {
+    "callsign": "RYR195M ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMG",
+    "icao24": "4cacab"
+  },
+  {
+    "callsign": "ICE520  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "BIKF",
+    "icao24": "4cc518"
+  },
+  {
+    "callsign": "DLH5HP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LGAV",
+    "icao24": "3c66a8"
+  },
+  {
+    "callsign": "SXS73C  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LTBJ",
+    "icao24": "4bccad"
+  },
+  {
+    "callsign": "CFG051  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "PANC",
+    "icao24": "3c4aa5"
+  },
+  {
+    "callsign": "AUA123A ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "44065b"
+  },
+  {
+    "callsign": "TAR744  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "DTTA",
+    "icao24": "02a18f"
+  },
+  {
+    "callsign": "DLH6P   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LKPR",
+    "icao24": "3c658b"
+  },
+  {
+    "callsign": "TUI1PJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4969"
+  },
+  {
+    "callsign": "AUI401  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "5083d0"
+  },
+  {
+    "callsign": "DLH5RK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c648c"
+  },
+  {
+    "callsign": "KZR937  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4844a2"
+  },
+  {
+    "callsign": "DLH7LX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6645"
+  },
+  {
+    "callsign": "DLH6JV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6672"
+  },
+  {
+    "callsign": "TAP574R ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "49528e"
+  },
+  {
+    "callsign": "DLH811  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESGG",
+    "icao24": "3c65c7"
+  },
+  {
+    "callsign": "GEC8413 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c7062"
+  },
+  {
+    "callsign": "DLH4LV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6670"
+  },
+  {
+    "callsign": "DLH307  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6628"
+  },
+  {
+    "callsign": "WOW4PQ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "4cc4c6"
+  },
+  {
+    "callsign": "CFG3LP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6468"
+  },
+  {
+    "callsign": "DLH3LY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c675a"
+  },
+  {
+    "callsign": "QTR9XA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OTBD",
+    "icao24": "06a10e"
+  },
+  {
+    "callsign": "BCS6717 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGGW",
+    "icao24": "3c5426"
+  },
+  {
+    "callsign": "RYR17VZ ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4cabc0"
+  },
+  {
+    "callsign": "DLH7H   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65c6"
+  },
+  {
+    "callsign": "UAE45   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OMDB",
+    "icao24": "896459"
+  },
+  {
+    "callsign": "THY3TJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4baac9"
+  },
+  {
+    "callsign": "DLH5EL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMC",
+    "icao24": "3c6588"
+  },
+  {
+    "callsign": "THY7LY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4baa04"
+  },
+  {
+    "callsign": "DLH9AV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c66ab"
+  },
+  {
+    "callsign": "GEC8224 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c7069"
+  },
+  {
+    "callsign": "DLH91H  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c6491"
+  },
+  {
+    "callsign": "SXD7BY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBBG",
+    "icao24": "3c0a43"
+  },
+  {
+    "callsign": "MGL137  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "682211"
+  },
+  {
+    "callsign": "CFG849  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "DTMB",
+    "icao24": "3c6424"
+  },
+  {
+    "callsign": "DLH3F   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c664e"
+  },
+  {
+    "callsign": "DLH837  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5463"
+  },
+  {
+    "callsign": "CFG254  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4aa1"
+  },
+  {
+    "callsign": "DLH1A   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "3c6637"
+  },
+  {
+    "callsign": "CFG2LV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "3c49e3"
+  },
+  {
+    "callsign": "DLA73NG ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPX",
+    "icao24": "30055b"
+  },
+  {
+    "callsign": "DLH405  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KJFK",
+    "icao24": "3c4b29"
+  },
+  {
+    "callsign": "DLH7C   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "3c6619"
+  },
+  {
+    "callsign": "MEA218  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "748029"
+  },
+  {
+    "callsign": "OOACO   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBBR",
+    "icao24": "44846f"
+  },
+  {
+    "callsign": "DLH9JT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "3c666c"
+  },
+  {
+    "callsign": "DLH8V   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "3c66ad"
+  },
+  {
+    "callsign": "AFL2300 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUEE",
+    "icao24": "424597"
+  },
+  {
+    "callsign": "DLH6NC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPKK",
+    "icao24": "3c6747"
+  },
+  {
+    "callsign": "KAC171  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "706058"
+  },
+  {
+    "callsign": "DLH47E  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFML",
+    "icao24": "3c66aa"
+  },
+  {
+    "callsign": "DLH3W   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBBR",
+    "icao24": "3c6598"
+  },
+  {
+    "callsign": "DLH8UP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c6643"
+  },
+  {
+    "callsign": "DLH511  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4b30"
+  },
+  {
+    "callsign": "DAL15   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "a11d3c"
+  },
+  {
+    "callsign": "DLH5AC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESGG",
+    "icao24": "3c6674"
+  },
+  {
+    "callsign": "DLH9U   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c660d"
+  },
+  {
+    "callsign": "DLH25M  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6749"
+  },
+  {
+    "callsign": "PGT7448 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "4bb850"
+  },
+  {
+    "callsign": "DLH055  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDV",
+    "icao24": "3c5465"
+  },
+  {
+    "callsign": "CFG9ZD  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6467"
+  },
+  {
+    "callsign": "CFG011  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KMSP",
+    "icao24": "3c4aba"
+  },
+  {
+    "callsign": "DLH17N  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c65c8"
+  },
+  {
+    "callsign": "DLH5YX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGCC",
+    "icao24": "3c6586"
+  },
+  {
+    "callsign": "AUA23P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWS",
+    "icao24": "440826"
+  },
+  {
+    "callsign": "DLH8EJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EIDW",
+    "icao24": "3c66a1"
+  },
+  {
+    "callsign": "DLH1CJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDC",
+    "icao24": "3c5464"
+  },
+  {
+    "callsign": "UAL932  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KIAD",
+    "icao24": "aac4ed"
+  },
+  {
+    "callsign": "DLH4CH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6663"
+  },
+  {
+    "callsign": "DLH6KF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6662"
+  },
+  {
+    "callsign": "DLH4RK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c664d"
+  },
+  {
+    "callsign": "DLH2WU  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDW",
+    "icao24": "3c6583"
+  },
+  {
+    "callsign": "DLH1P   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LKPR",
+    "icao24": "3c66a2"
+  },
+  {
+    "callsign": "DLH2J   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6610"
+  },
+  {
+    "callsign": "DLH3KX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPZ",
+    "icao24": "3c644a"
+  },
+  {
+    "callsign": "DLH1EK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPWA",
+    "icao24": "3c666f"
+  },
+  {
+    "callsign": "DLH7KV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6652"
+  },
+  {
+    "callsign": "RYR1687 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGSS",
+    "icao24": "4ca37d"
+  },
+  {
+    "callsign": "DLH8WT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5462"
+  },
+  {
+    "callsign": "CFG4ED  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEJR",
+    "icao24": "3c6423"
+  },
+  {
+    "callsign": "AAL70   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "aab202"
+  },
+  {
+    "callsign": "DLH9KW  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c658e"
+  },
+  {
+    "callsign": "DLH8CF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGBB",
+    "icao24": "3c6589"
+  },
+  {
+    "callsign": "CFG115  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4aaf"
+  },
+  {
+    "callsign": "AUA19FC ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "440bb7"
+  },
+  {
+    "callsign": "AUA253  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWG",
+    "icao24": "440828"
+  },
+  {
+    "callsign": "DLH465  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KMCO",
+    "icao24": "3c4a8b"
+  },
+  {
+    "callsign": "DLH3PJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDS",
+    "icao24": "3c6593"
+  },
+  {
+    "callsign": "DLH2LY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "3c65c5"
+  },
+  {
+    "callsign": "WOW7PJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "BIKF",
+    "icao24": "4cc4c6"
+  },
+  {
+    "callsign": "DLH825  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "3c65c3"
+  },
+  {
+    "callsign": "DLH161  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDP",
+    "icao24": "34530e"
+  },
+  {
+    "callsign": "DLH6YY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPE",
+    "icao24": "3c6592"
+  },
+  {
+    "callsign": "DLH457  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KLAX",
+    "icao24": "3c6516"
+  },
+  {
+    "callsign": "DLH72T  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFBO",
+    "icao24": "3c66ae"
+  },
+  {
+    "callsign": "ACA876  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYYZ",
+    "icao24": "c0171a"
+  },
+  {
+    "callsign": "DLH3VR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDV",
+    "icao24": "3c658d"
+  },
+  {
+    "callsign": "DLH421  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KBOS",
+    "icao24": "3c6570"
+  },
+  {
+    "callsign": "DLH5TN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMF",
+    "icao24": "300557"
+  },
+  {
+    "callsign": "SAS4755 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4ac8b4"
+  },
+  {
+    "callsign": "DLH695  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6489"
+  },
+  {
+    "callsign": "DLH7A   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "3c66ab"
+  },
+  {
+    "callsign": "DLH039  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c66ac"
+  },
+  {
+    "callsign": "SAS635  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "4cacb5"
+  },
+  {
+    "callsign": "DLH1453 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUDD",
+    "icao24": "3c648a"
+  },
+  {
+    "callsign": "DLH5RP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6668"
+  },
+  {
+    "callsign": "UAL46   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KIAH",
+    "icao24": "aa92fb"
+  },
+  {
+    "callsign": "DLH5H   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65c4"
+  },
+  {
+    "callsign": "DLH493  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYVR",
+    "icao24": "3c4a8c"
+  },
+  {
+    "callsign": "DLH467  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KSAN",
+    "icao24": "3c64ee"
+  },
+  {
+    "callsign": "DLH4LX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6655"
+  },
+  {
+    "callsign": "DLH483  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64f6"
+  },
+  {
+    "callsign": "CFG415  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYHZ",
+    "icao24": "3c4aa2"
+  },
+  {
+    "callsign": "DLH4PF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c66a4"
+  },
+  {
+    "callsign": "ANE14JD ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "3451d9"
+  },
+  {
+    "callsign": "PGT7447 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4bb850"
+  },
+  {
+    "callsign": "UAL907  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KORD",
+    "icao24": "a1dcb4"
+  },
+  {
+    "callsign": "SXS6NC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4bccaf"
+  },
+  {
+    "callsign": "DLH447  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KDEN",
+    "icao24": "3c4ada"
+  },
+  {
+    "callsign": "TUI6515 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIED",
+    "icao24": "3c0c9c"
+  },
+  {
+    "callsign": "DLH6EJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6678"
+  },
+  {
+    "callsign": "AZA400  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "4ca8df"
+  },
+  {
+    "callsign": "DLH2CF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLC",
+    "icao24": "3c5467"
+  },
+  {
+    "callsign": "KLM1765 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "4852f5"
+  },
+  {
+    "callsign": "DLH35E  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "3c674e"
+  },
+  {
+    "callsign": "ACA838  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYOW",
+    "icao24": "c061e9"
+  },
+  {
+    "callsign": "DLH455  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KSFO",
+    "icao24": "3c65aa"
+  },
+  {
+    "callsign": "CFG403  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYYZ",
+    "icao24": "3c4ab0"
+  },
+  {
+    "callsign": "TAP578G ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "495224"
+  },
+  {
+    "callsign": "DLH8EK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMC",
+    "icao24": "3c6667"
+  },
+  {
+    "callsign": "BAW906N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "40087b"
+  },
+  {
+    "callsign": "CTN416  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LDZA",
+    "icao24": "501d20"
+  },
+  {
+    "callsign": "DLH5K   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSGG",
+    "icao24": "3c658c"
+  },
+  {
+    "callsign": "DLH19P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c667a"
+  },
+  {
+    "callsign": "DLH7HP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6677"
+  },
+  {
+    "callsign": "DLH1C   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "3c5468"
+  },
+  {
+    "callsign": "DLH9F   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6448"
+  },
+  {
+    "callsign": "DLH7V   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "3c6654"
+  },
+  {
+    "callsign": "CFG063  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KLAS",
+    "icao24": "3c4ab4"
+  },
+  {
+    "callsign": "DLH507  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "SBGR",
+    "icao24": "3c4b26"
+  },
+  {
+    "callsign": "DUKE22  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ETOU",
+    "icao24": "ae50d4"
+  },
+  {
+    "callsign": "DLH23C  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "3c6758"
+  },
+  {
+    "callsign": "AEE13   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LGAV",
+    "icao24": "4690f1"
+  },
+  {
+    "callsign": "SIA25   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KJFK",
+    "icao24": "76cd73"
+  },
+  {
+    "callsign": "CKK211  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RJBB",
+    "icao24": "78071c"
+  },
+  {
+    "callsign": "ROT301R ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LROP",
+    "icao24": "4a08ed"
+  },
+  {
+    "callsign": "AFL2306 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUEE",
+    "icao24": "424591"
+  },
+  {
+    "callsign": "IRA721  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "732542"
+  },
+  {
+    "callsign": "EIN6JY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EIDW",
+    "icao24": "4ca6c4"
+  },
+  {
+    "callsign": "THY2HB  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4ba9aa"
+  },
+  {
+    "callsign": "LDM315  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "4ca1b8"
+  },
+  {
+    "callsign": "DLH1W   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBBR",
+    "icao24": "3c6444"
+  },
+  {
+    "callsign": "DLH2UY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6646"
+  },
+  {
+    "callsign": "ACA844  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "c023c8"
+  },
+  {
+    "callsign": "TUI5CM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c0ca1"
+  },
+  {
+    "callsign": "DLH8JT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6650"
+  },
+  {
+    "callsign": "CFG4HF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c49eb"
+  },
+  {
+    "callsign": "MEA217  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "748029"
+  },
+  {
+    "callsign": "DLH6U   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65c1"
+  },
+  {
+    "callsign": "DAL4    ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KJFK",
+    "icao24": "a11d3c"
+  },
+  {
+    "callsign": "DLH21A  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c648e"
+  },
+  {
+    "callsign": "GEC8269 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "GOBD",
+    "icao24": "3c7069"
+  },
+  {
+    "callsign": "AUA133  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "44001c"
+  },
+  {
+    "callsign": "ELY357  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LLBG",
+    "icao24": "73806e"
+  },
+  {
+    "callsign": "AEA1503 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "343495"
+  },
+  {
+    "callsign": "DLH8VR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6670"
+  },
+  {
+    "callsign": "UAL58   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KSFO",
+    "icao24": "a2b501"
+  },
+  {
+    "callsign": "DLH1RJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDC",
+    "icao24": "3c6604"
+  },
+  {
+    "callsign": "CTN27D  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "501d1e"
+  },
+  {
+    "callsign": "DLH8PF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c648c"
+  },
+  {
+    "callsign": "DLH761  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "VIDP",
+    "icao24": "3c65a9"
+  },
+  {
+    "callsign": "DLH3EJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LMML",
+    "icao24": "3c66b0"
+  },
+  {
+    "callsign": "DLH3LX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c66a9"
+  },
+  {
+    "callsign": "BAW902N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "4006c8"
+  },
+  {
+    "callsign": "CFG227  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4aa4"
+  },
+  {
+    "callsign": "DLH5HR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c6626"
+  },
+  {
+    "callsign": "SXS3TK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LTBJ",
+    "icao24": "4bccae"
+  },
+  {
+    "callsign": "DLH3C   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "3c66af"
+  },
+  {
+    "callsign": "DLH9LY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDP",
+    "icao24": "3c5466"
+  },
+  {
+    "callsign": "UAL960  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KEWR",
+    "icao24": "a219ea"
+  },
+  {
+    "callsign": "CTN410  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LDZA",
+    "icao24": "501d1f"
+  },
+  {
+    "callsign": "DAL14   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "a120f3"
+  },
+  {
+    "callsign": "FIN1AB  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EFHK",
+    "icao24": "461f6c"
+  },
+  {
+    "callsign": "DLH6J   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6648"
+  },
+  {
+    "callsign": "DLH7PX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDN",
+    "icao24": "3c5465"
+  },
+  {
+    "callsign": "DLH1UV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6613"
+  },
+  {
+    "callsign": "DLH5A   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "3c66a5"
+  },
+  {
+    "callsign": "DLH9AA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6645"
+  },
+  {
+    "callsign": "DLH9H   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65ca"
+  },
+  {
+    "callsign": "DLH051  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDV",
+    "icao24": "3c6590"
+  },
+  {
+    "callsign": "DLH983  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EIDW",
+    "icao24": "3c65c9"
+  },
+  {
+    "callsign": "DLH1FL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c6676"
+  },
+  {
+    "callsign": "DLH427  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KPHL",
+    "icao24": "3c64f0"
+  },
+  {
+    "callsign": "DLH37F  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c6664"
+  },
+  {
+    "callsign": "DLH637  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OERK",
+    "icao24": "3c6504"
+  },
+  {
+    "callsign": "DLH755  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4ad2"
+  },
+  {
+    "callsign": "DLH72K  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEVC",
+    "icao24": "3c6671"
+  },
+  {
+    "callsign": "DLH62Y  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6614"
+  },
+  {
+    "callsign": "DLH5EK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGCC",
+    "icao24": "3c65c2"
+  },
+  {
+    "callsign": "AAL750  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KPHL",
+    "icao24": "a2d937"
+  },
+  {
+    "callsign": "DLH7AC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6666"
+  },
+  {
+    "callsign": "DLH4TN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPWA",
+    "icao24": "3c658b"
+  },
+  {
+    "callsign": "DLH491  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KSEA",
+    "icao24": "3c4ad5"
+  },
+  {
+    "callsign": "DLH23T  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBB",
+    "icao24": "3c6621"
+  },
+  {
+    "callsign": "DLH54U  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6635"
+  },
+  {
+    "callsign": "DLH1497 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "3c66a7"
+  },
+  {
+    "callsign": "DLH4YY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6672"
+  },
+  {
+    "callsign": "DLH99P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFML",
+    "icao24": "3c6619"
+  },
+  {
+    "callsign": "DLH441  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KIAH",
+    "icao24": "3c65ad"
+  },
+  {
+    "callsign": "DLH439  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KDFW",
+    "icao24": "3c6564"
+  },
+  {
+    "callsign": "SAS639  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "45ac37"
+  },
+  {
+    "callsign": "DLH68H  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "3c6487"
+  },
+  {
+    "callsign": "AUA121F ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "44065b"
+  },
+  {
+    "callsign": "DLH4HP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGBB",
+    "icao24": "3c6449"
+  },
+  {
+    "callsign": "DLH9XV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "3c6583"
+  },
+  {
+    "callsign": "UAE43   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OMDB",
+    "icao24": "89620b"
+  },
+  {
+    "callsign": "ACA874  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "c058c0"
+  },
+  {
+    "callsign": "DLH8LA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LDZA",
+    "icao24": "34530e"
+  },
+  {
+    "callsign": "DLH4CF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LGAV",
+    "icao24": "3c6675"
+  },
+  {
+    "callsign": "DLH7WT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6750"
+  },
+  {
+    "callsign": "DLH691  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LLBG",
+    "icao24": "3c6669"
+  },
+  {
+    "callsign": "DLH585  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c648b"
+  },
+  {
+    "callsign": "DLH419  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KIAD",
+    "icao24": "3c4b2a"
+  },
+  {
+    "callsign": "DLH9MC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6598"
+  },
+  {
+    "callsign": "ADR14P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "506c2f"
+  },
+  {
+    "callsign": "DLH1JT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "3c66a2"
+  },
+  {
+    "callsign": "DLH8JW  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "30055b"
+  },
+  {
+    "callsign": "DLH4MA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c6593"
+  },
+  {
+    "callsign": "DAL86   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "a0f4f6"
+  },
+  {
+    "callsign": "DLH1493 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6653"
+  },
+  {
+    "callsign": "AZA71G  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "4caa77"
+  },
+  {
+    "callsign": "DLH1451 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUDD",
+    "icao24": "3c6488"
+  },
+  {
+    "callsign": "UAL944  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KORD",
+    "icao24": "aaa4dc"
+  },
+  {
+    "callsign": "DLH3KV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6759"
+  },
+  {
+    "callsign": "ACA840  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYVR",
+    "icao24": "c058bf"
+  },
+  {
+    "callsign": "DLH8VT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMC",
+    "icao24": "3c658d"
+  },
+  {
+    "callsign": "DLH1305 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6757"
+  },
+  {
+    "callsign": "DLH833  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "3c6637"
+  },
+  {
+    "callsign": "DLH1YX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESGG",
+    "icao24": "3c66a3"
+  },
+  {
+    "callsign": "DLH1K   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSGG",
+    "icao24": "3c5463"
+  },
+  {
+    "callsign": "AAL704  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "a2d580"
+  },
+  {
+    "callsign": "DLH759  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64c4"
+  },
+  {
+    "callsign": "AUA261  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWS",
+    "icao24": "440826"
+  },
+  {
+    "callsign": "DLH7EM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6663"
+  },
+  {
+    "callsign": "DLH87Y  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFBO",
+    "icao24": "3c674f"
+  },
+  {
+    "callsign": "DLH613  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c648d"
+  },
+  {
+    "callsign": "DLH3Y   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBBR",
+    "icao24": "3c675a"
+  },
+  {
+    "callsign": "DLH757  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "VABB",
+    "icao24": "3c4ad4"
+  },
+  {
+    "callsign": "DLH173  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c664d"
+  },
+  {
+    "callsign": "DLH463  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KMIA",
+    "icao24": "3c65a6"
+  },
+  {
+    "callsign": "UAL989  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KIAD",
+    "icao24": "aad012"
+  },
+  {
+    "callsign": "DLH471  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYYZ",
+    "icao24": "3c4acd"
+  },
+  {
+    "callsign": "DLH5NC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c664e"
+  },
+  {
+    "callsign": "SWR105A ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "4b16ba"
+  },
+  {
+    "callsign": "DLH6TP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPE",
+    "icao24": "3c658e"
+  },
+  {
+    "callsign": "DLH1EL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPZ",
+    "icao24": "3c66ad"
+  },
+  {
+    "callsign": "NMB285  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "20103c"
+  },
+  {
+    "callsign": "DLH1439 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ULLI",
+    "icao24": "3c6662"
+  },
+  {
+    "callsign": "DLH5PF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBSF",
+    "icao24": "3c6659"
+  },
+  {
+    "callsign": "DLH1VR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c65c5"
+  },
+  {
+    "callsign": "CCA965  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "780c9e"
+  },
+  {
+    "callsign": "DLH2V   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "3c65c7"
+  },
+  {
+    "callsign": "GEC8455 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "VHHH",
+    "icao24": "3c706b"
+  },
+  {
+    "callsign": "DLH2EJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EFHK",
+    "icao24": "3c66aa"
+  },
+  {
+    "callsign": "DLH3FL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LROP",
+    "icao24": "3c6747"
+  },
+  {
+    "callsign": "DLH885  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EETN",
+    "icao24": "3c6588"
+  },
+  {
+    "callsign": "DLH2FM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPKK",
+    "icao24": "3c6749"
+  },
+  {
+    "callsign": "AUA251  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWG",
+    "icao24": "440828"
+  },
+  {
+    "callsign": "DLH445  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "25GA",
+    "icao24": "3c64c6"
+  },
+  {
+    "callsign": "DLH403  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KEWR",
+    "icao24": "3c4b23"
+  },
+  {
+    "callsign": "DLH5RJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c65c6"
+  },
+  {
+    "callsign": "DLH18X  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c66ae"
+  },
+  {
+    "callsign": "CCA771  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "780005"
+  },
+  {
+    "callsign": "DLH351  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDW",
+    "icao24": "3c5462"
+  },
+  {
+    "callsign": "DLH5LY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDV",
+    "icao24": "3c644a"
+  },
+  {
+    "callsign": "DLH693  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c666a"
+  },
+  {
+    "callsign": "DLH1489 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5464"
+  },
+  {
+    "callsign": "DLH7P   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LKPR",
+    "icao24": "3c6610"
+  },
+  {
+    "callsign": "DLH2LX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMF",
+    "icao24": "300557"
+  },
+  {
+    "callsign": "DLH4W   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBBR",
+    "icao24": "3c660d"
+  },
+  {
+    "callsign": "DLH1309 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6668"
+  },
+  {
+    "callsign": "DLH02K  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOLW",
+    "icao24": "3c5468"
+  },
+  {
+    "callsign": "DLH431  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KORD",
+    "icao24": "3c4b2b"
+  },
+  {
+    "callsign": "EZY376P ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "5110d4"
+  },
+  {
+    "callsign": "DLH889  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EYVI",
+    "icao24": "3c66ac"
+  },
+  {
+    "callsign": "DLH8F   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6496"
+  },
+  {
+    "callsign": "DLH6CF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6655"
+  },
+  {
+    "callsign": "DLH2YY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDS",
+    "icao24": "3c66ab"
+  },
+  {
+    "callsign": "DLH5KW  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDC",
+    "icao24": "3c6592"
+  },
+  {
+    "callsign": "DLH479  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64c5"
+  },
+  {
+    "callsign": "DLH893  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EVRA",
+    "icao24": "3c65c8"
+  },
+  {
+    "callsign": "DCBBS   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDLW",
+    "icao24": "3cc2d0"
+  },
+  {
+    "callsign": "QTR33YD ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OTBD",
+    "icao24": "06a2b2"
+  },
+  {
+    "callsign": "ACA872  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "CYYZ",
+    "icao24": "c0173e"
+  },
+  {
+    "callsign": "OMA115  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "70c0f6"
+  },
+  {
+    "callsign": "DLH599  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64f5"
+  },
+  {
+    "callsign": "DLH4EK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDP",
+    "icao24": "3c6589"
+  },
+  {
+    "callsign": "DLH3TN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6678"
+  },
+  {
+    "callsign": "SAA260  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "FAOR",
+    "icao24": "00b0eb"
+  },
+  {
+    "callsign": "DLH073  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c6586"
+  },
+  {
+    "callsign": "BUC3115 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "451f18"
+  },
+  {
+    "callsign": "GFA017  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "894078"
+  },
+  {
+    "callsign": "DLH143  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDN",
+    "icao24": "3c6491"
+  },
+  {
+    "callsign": "GEC8397 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c70c3"
+  },
+  {
+    "callsign": "DLH1295 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c6677"
+  },
+  {
+    "callsign": "CAL061  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RCTP",
+    "icao24": "89901e"
+  },
+  {
+    "callsign": "DLH649  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c656c"
+  },
+  {
+    "callsign": "DLH779  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c65ae"
+  },
+  {
+    "callsign": "SIA26   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "76cd6c"
+  },
+  {
+    "callsign": "THY9EV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4baa92"
+  },
+  {
+    "callsign": "ETD1    ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "896488"
+  },
+  {
+    "callsign": "CPA289  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "VHHH",
+    "icao24": "78022e"
+  },
+  {
+    "callsign": "DLH625  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c656f"
+  },
+  {
+    "callsign": "RUN6403 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4b8472"
+  },
+  {
+    "callsign": "DLH569  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6566"
+  },
+  {
+    "callsign": "HVN31   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "888123"
+  },
+  {
+    "callsign": "THA920  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "88516b"
+  },
+  {
+    "callsign": "DLH1331 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c66a6"
+  },
+  {
+    "callsign": "DLH423  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KBOS",
+    "icao24": "3c4b33"
+  },
+  {
+    "callsign": "SXD8QP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c0a45"
+  },
+  {
+    "callsign": "DLH1327 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "DTTA",
+    "icao24": "3c66a4"
+  },
+  {
+    "callsign": "DLH401  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KJFK",
+    "icao24": "3c65a3"
+  },
+  {
+    "callsign": "DLH773  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64f4"
+  },
+  {
+    "callsign": "DLH573  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "FAOR",
+    "icao24": "3c4b24"
+  },
+  {
+    "callsign": "DLH1319 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6650"
+  },
+  {
+    "callsign": "DLH443  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "86MI",
+    "icao24": "3c4ad7"
+  },
+  {
+    "callsign": "DLH631  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OMDB",
+    "icao24": "3c6565"
+  },
+  {
+    "callsign": "CES219  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "780f3d"
+  },
+  {
+    "callsign": "LXG55MP ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDLP",
+    "icao24": "3ce0f7"
+  },
+  {
+    "callsign": "DLH417  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KIAD",
+    "icao24": "3c4ad8"
+  },
+  {
+    "callsign": "OHY801  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDN",
+    "icao24": "4bbc59"
+  },
+  {
+    "callsign": "CLU817  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KIAH",
+    "icao24": "406ea3"
+  },
+  {
+    "callsign": "DLH601  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4ad0"
+  },
+  {
+    "callsign": "DLH595  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6569"
+  },
+  {
+    "callsign": "GEC8385 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RKSI",
+    "icao24": "3c70c4"
+  },
+  {
+    "callsign": "SXD7PE  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LTAF",
+    "icao24": "3c0a44"
+  },
+  {
+    "callsign": "DLH591  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6571"
+  },
+  {
+    "callsign": "ETH706  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "FAOR",
+    "icao24": "04014b"
+  },
+  {
+    "callsign": "BCS126  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDP",
+    "icao24": "3c5426"
+  },
+  {
+    "callsign": "DLH797  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6503"
+  },
+  {
+    "callsign": "ANA203  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RJTT",
+    "icao24": "8691cc"
+  },
+  {
+    "callsign": null,
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "502c36"
+  },
+  {
+    "callsign": "DLH733  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4ad3"
+  },
+  {
+    "callsign": "GEC8341 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c706e"
+  },
+  {
+    "callsign": "LHT1234 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c7063"
+  },
+  {
+    "callsign": "RYR63BY ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEVC",
+    "icao24": "4caa5a"
+  },
+  {
+    "callsign": "RYR39VR ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGSS",
+    "icao24": "4cabc0"
+  },
+  {
+    "callsign": "RYR13KU ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEAL",
+    "icao24": "4ca1ba"
+  },
+  {
+    "callsign": "IBE31AV ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "3420ce"
+  },
+  {
+    "callsign": "CFG8EP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c49ec"
+  },
+  {
+    "callsign": "TUI2AY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPMA",
+    "icao24": "3c60d4"
+  },
+  {
+    "callsign": "CFG8WY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6426"
+  },
+  {
+    "callsign": "RYR43AD ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "4ca97c"
+  },
+  {
+    "callsign": "TUI3JH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c0d03"
+  },
+  {
+    "callsign": "CFG9EF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c49ea"
+  },
+  {
+    "callsign": "TUI6757 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4969"
+  },
+  {
+    "callsign": "CFG143  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c49e9"
+  },
+  {
+    "callsign": "GEC8221 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KJFK",
+    "icao24": "3c706a"
+  },
+  {
+    "callsign": "RYR33WH ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIME",
+    "icao24": "4cab99"
+  },
+  {
+    "callsign": "CFG525  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6467"
+  },
+  {
+    "callsign": "DLH9YJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6652"
+  },
+  {
+    "callsign": "TAP572C ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "495295"
+  },
+  {
+    "callsign": "CFG6PM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "503da6"
+  },
+  {
+    "callsign": "DLH171  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6590"
+  },
+  {
+    "callsign": "RYR45VH ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPFR",
+    "icao24": "4cacab"
+  },
+  {
+    "callsign": "DLH8PK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6654"
+  },
+  {
+    "callsign": "AUI403  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "50837c"
+  },
+  {
+    "callsign": "DLH64U  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFML",
+    "icao24": "3c6643"
+  },
+  {
+    "callsign": "BAW916N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "400940"
+  },
+  {
+    "callsign": "DLH919  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c6448"
+  },
+  {
+    "callsign": "DLH4PJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c66a1"
+  },
+  {
+    "callsign": "AUA127F ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "440050"
+  },
+  {
+    "callsign": "DLH44M  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEVC",
+    "icao24": "3c6645"
+  },
+  {
+    "callsign": "DLH7ML  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPKK",
+    "icao24": "3c6637"
+  },
+  {
+    "callsign": "RYR31RZ ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4ca37e"
+  },
+  {
+    "callsign": "TUI9CK  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c0a02"
+  },
+  {
+    "callsign": "RYR85VQ ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "4ca93d"
+  },
+  {
+    "callsign": "GEC8371 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c7068"
+  },
+  {
+    "callsign": "DLH9EP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c6750"
+  },
+  {
+    "callsign": "DLH1RP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EIDW",
+    "icao24": "3c6653"
+  },
+  {
+    "callsign": "DLH42K  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMG",
+    "icao24": "3c6667"
+  },
+  {
+    "callsign": "DLH41T  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c660d"
+  },
+  {
+    "callsign": "IFA2425 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5824"
+  },
+  {
+    "callsign": "DLH805  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "3c66a4"
+  },
+  {
+    "callsign": "DLH3CT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c65c4"
+  },
+  {
+    "callsign": "DLH3A   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c6628"
+  },
+  {
+    "callsign": "DLH53P  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEPA",
+    "icao24": "3c648b"
+  },
+  {
+    "callsign": "DLH8A   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "3c65c3"
+  },
+  {
+    "callsign": "THY1GY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4ba9ac"
+  },
+  {
+    "callsign": "DLH3RX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMC",
+    "icao24": "3c5462"
+  },
+  {
+    "callsign": "FDX36   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGSS",
+    "icao24": "a690de"
+  },
+  {
+    "callsign": "DLH7A   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "3c658c"
+  },
+  {
+    "callsign": "DLH59H  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c6491"
+  },
+  {
+    "callsign": "DLH28W  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBB",
+    "icao24": "3c6610"
+  },
+  {
+    "callsign": "RYR30VH ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4ca376"
+  },
+  {
+    "callsign": "DLH7KH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6677"
+  },
+  {
+    "callsign": "DLH4C   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6668"
+  },
+  {
+    "callsign": "AFL2304 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUEE",
+    "icao24": "424118"
+  },
+  {
+    "callsign": "DLH947  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGCC",
+    "icao24": "3c66af"
+  },
+  {
+    "callsign": "DLH8XA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGPH",
+    "icao24": "3c6749"
+  },
+  {
+    "callsign": "DLH819  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESGG",
+    "icao24": "3c65c7"
+  },
+  {
+    "callsign": "CFG3HM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6423"
+  },
+  {
+    "callsign": "DLH511A ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4b34"
+  },
+  {
+    "callsign": "DLH9WA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMF",
+    "icao24": "300557"
+  },
+  {
+    "callsign": "DLH55K  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c66a3"
+  },
+  {
+    "callsign": "DLH21X  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFBO",
+    "icao24": "3c658e"
+  },
+  {
+    "callsign": "DLH1CM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6650"
+  },
+  {
+    "callsign": "DLH4RV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "3c6593"
+  },
+  {
+    "callsign": "DLH9JL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "300393"
+  },
+  {
+    "callsign": "DLH999  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "3c6444"
+  },
+  {
+    "callsign": "DLH2VC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGBB",
+    "icao24": "3c6670"
+  },
+  {
+    "callsign": "DLH4WL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPZ",
+    "icao24": "3c658d"
+  },
+  {
+    "callsign": "DLH42A  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "3c6758"
+  },
+  {
+    "callsign": "DLH1JE  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c644a"
+  },
+  {
+    "callsign": "DLH3UT  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIRF",
+    "icao24": "3c6671"
+  },
+  {
+    "callsign": "N43R    ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGSS",
+    "icao24": "a5223c"
+  },
+  {
+    "callsign": "DLH5XY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c65c9"
+  },
+  {
+    "callsign": "DLH3NE  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LBSF",
+    "icao24": "3c674f"
+  },
+  {
+    "callsign": "DLH9V   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "3c6676"
+  },
+  {
+    "callsign": "DLH6EM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LGAV",
+    "icao24": "3c666c"
+  },
+  {
+    "callsign": "DLH935  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLC",
+    "icao24": "3c5468"
+  },
+  {
+    "callsign": "DLH1437 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ULLI",
+    "icao24": "3c6663"
+  },
+  {
+    "callsign": "DLH1449 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "UUDD",
+    "icao24": "3c648c"
+  },
+  {
+    "callsign": "DLH26N  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFBD",
+    "icao24": "3c6592"
+  },
+  {
+    "callsign": "DLH1FY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6449"
+  },
+  {
+    "callsign": "DLH7CP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c66ad"
+  },
+  {
+    "callsign": "DLH8ET  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "3c6496"
+  },
+  {
+    "callsign": "SIA326  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "KSFO",
+    "icao24": "76ceed"
+  },
+  {
+    "callsign": "DLH8LC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c66ae"
+  },
+  {
+    "callsign": "DLH6HX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPWA",
+    "icao24": "3c66aa"
+  },
+  {
+    "callsign": "DLH3VJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIMC",
+    "icao24": "3c6646"
+  },
+  {
+    "callsign": "DLH687  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LLBG",
+    "icao24": "3c666f"
+  },
+  {
+    "callsign": "DLH697  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6757"
+  },
+  {
+    "callsign": "DLH1163 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPFR",
+    "icao24": "3c6672"
+  },
+  {
+    "callsign": "DLH9MM  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6589"
+  },
+  {
+    "callsign": "DLH583  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c666a"
+  },
+  {
+    "callsign": "AUA257  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWG",
+    "icao24": "440828"
+  },
+  {
+    "callsign": "DLH1LN  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c6614"
+  },
+  {
+    "callsign": "SWR1076 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "4b1691"
+  },
+  {
+    "callsign": "DLH8U   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65ca"
+  },
+  {
+    "callsign": "DLH6V   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "3c65c5"
+  },
+  {
+    "callsign": "DLH6LR  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c664c"
+  },
+  {
+    "callsign": "DLH7Y   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBBR",
+    "icao24": "3c66a5"
+  },
+  {
+    "callsign": "DLH8PV  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6678"
+  },
+  {
+    "callsign": "DLH7VX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPE",
+    "icao24": "3c6588"
+  },
+  {
+    "callsign": "AUA269  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWS",
+    "icao24": "440826"
+  },
+  {
+    "callsign": "FEG3003 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LROP",
+    "icao24": "0101ce"
+  },
+  {
+    "callsign": "DLH72J  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c674e"
+  },
+  {
+    "callsign": "DLH9FP  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LHBP",
+    "icao24": "3c6583"
+  },
+  {
+    "callsign": "DLH4PH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LMML",
+    "icao24": "3c66a2"
+  },
+  {
+    "callsign": "DLH883  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EETN",
+    "icao24": "3c66b0"
+  },
+  {
+    "callsign": "DLH2KY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LROP",
+    "icao24": "3c6626"
+  },
+  {
+    "callsign": "DLH2F   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LFPG",
+    "icao24": "3c6664"
+  },
+  {
+    "callsign": "EIN65A  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EIDW",
+    "icao24": "4ca770"
+  },
+  {
+    "callsign": "DLA77W  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPX",
+    "icao24": "30055b"
+  },
+  {
+    "callsign": "DLH1307 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c648e"
+  },
+  {
+    "callsign": "DLH7AF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5465"
+  },
+  {
+    "callsign": "DLH897  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EYVI",
+    "icao24": "3c66a8"
+  },
+  {
+    "callsign": "DLH1301 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6613"
+  },
+  {
+    "callsign": "CTN414  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LDZA",
+    "icao24": "501d20"
+  },
+  {
+    "callsign": "DLH059  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDV",
+    "icao24": "3c66ab"
+  },
+  {
+    "callsign": "DLH5PL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c664e"
+  },
+  {
+    "callsign": "DLH28H  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "3c6604"
+  },
+  {
+    "callsign": "DLH857  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "BIKF",
+    "icao24": "3c66ac"
+  },
+  {
+    "callsign": "DLH329  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIPZ",
+    "icao24": "3c66a9"
+  },
+  {
+    "callsign": "DLH5MF  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDW",
+    "icao24": "3c6759"
+  },
+  {
+    "callsign": "ADR4K   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LJLJ",
+    "icao24": "506c21"
+  },
+  {
+    "callsign": "SAS1635 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EKCH",
+    "icao24": "45ac45"
+  },
+  {
+    "callsign": "EZY604Q ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "406a95"
+  },
+  {
+    "callsign": "DLH3XY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "3c65c2"
+  },
+  {
+    "callsign": "LOT3ZC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EPWA",
+    "icao24": "4a09ae"
+  },
+  {
+    "callsign": "DLH1495 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c6747"
+  },
+  {
+    "callsign": "CFG3MX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIEE",
+    "icao24": "3c4aa8"
+  },
+  {
+    "callsign": "DLH1VU  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c5466"
+  },
+  {
+    "callsign": "FDX3    ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "ac2d32"
+  },
+  {
+    "callsign": "DLH1WC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ELLX",
+    "icao24": "34530e"
+  },
+  {
+    "callsign": "DLH8WY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDC",
+    "icao24": "3c658b"
+  },
+  {
+    "callsign": "DLH9KX  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EFHK",
+    "icao24": "3c6621"
+  },
+  {
+    "callsign": "DLH729  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c65a1"
+  },
+  {
+    "callsign": "DLH12T  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c6648"
+  },
+  {
+    "callsign": "TAP576N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LPPT",
+    "icao24": "4951d8"
+  },
+  {
+    "callsign": "        ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "780970"
+  },
+  {
+    "callsign": "DLH3P   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LKPR",
+    "icao24": "3c65c8"
+  },
+  {
+    "callsign": "ASL90C  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4c01e3"
+  },
+  {
+    "callsign": "DLH8C   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSZH",
+    "icao24": "3c65c6"
+  },
+  {
+    "callsign": "DLH4LC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c66a6"
+  },
+  {
+    "callsign": "DLH1ME  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDP",
+    "icao24": "3c5467"
+  },
+  {
+    "callsign": "DLH713  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "RKSI",
+    "icao24": "3c650c"
+  },
+  {
+    "callsign": "DLH085  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDL",
+    "icao24": "3c5463"
+  },
+  {
+    "callsign": "DLH3H   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c65c1"
+  },
+  {
+    "callsign": "AZA410  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LIML",
+    "icao24": "4caa63"
+  },
+  {
+    "callsign": "UAE6RA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OMDB",
+    "icao24": "8963f1"
+  },
+  {
+    "callsign": "SAS673  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "47bdfb"
+  },
+  {
+    "callsign": "DLH961  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGPF",
+    "icao24": "3c6586"
+  },
+  {
+    "callsign": "AUA125F ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LOWW",
+    "icao24": "440039"
+  },
+  {
+    "callsign": "AMC328  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LMML",
+    "icao24": "4d2025"
+  },
+  {
+    "callsign": "BAW912N ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "4008ae"
+  },
+  {
+    "callsign": "DLH7W   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EBBR",
+    "icao24": "3c6635"
+  },
+  {
+    "callsign": "DLH3KA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6655"
+  },
+  {
+    "callsign": "DLH2UC  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDM",
+    "icao24": "3c6652"
+  },
+  {
+    "callsign": "DLH7K   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LSGG",
+    "icao24": "3c6598"
+  },
+  {
+    "callsign": "SXD34V  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "3c0a44"
+  },
+  {
+    "callsign": "RYR875V ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGCC",
+    "icao24": "4cabc0"
+  },
+  {
+    "callsign": "AAR793  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGSS",
+    "icao24": "71be16"
+  },
+  {
+    "callsign": "THA922  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "885170"
+  },
+  {
+    "callsign": "RYR10TF ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "4cab99"
+  },
+  {
+    "callsign": "DLH1159 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c675a"
+  },
+  {
+    "callsign": "DLH7PH  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c664d"
+  },
+  {
+    "callsign": "KLM1769 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "485871"
+  },
+  {
+    "callsign": "DLH787  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64f3"
+  },
+  {
+    "callsign": "AIC121  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "VIDP",
+    "icao24": "8005f1"
+  },
+  {
+    "callsign": "DLH54M  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEBL",
+    "icao24": "3c6662"
+  },
+  {
+    "callsign": "IBE31VP ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "LEMD",
+    "icao24": "34324f"
+  },
+  {
+    "callsign": "DLH9EL  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c648a"
+  },
+  {
+    "callsign": "DLH9MA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "ESSA",
+    "icao24": "3c66a7"
+  },
+  {
+    "callsign": "KZR921  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "48435a"
+  },
+  {
+    "callsign": "QTR8223 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "OTBD",
+    "icao24": "06a1e6"
+  },
+  {
+    "callsign": "DLH717  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c4b21"
+  },
+  {
+    "callsign": "KLM1773 ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EHAM",
+    "icao24": "485814"
+  },
+  {
+    "callsign": "DLH9XY  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "3c6654"
+  },
+  {
+    "callsign": "AAR542  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDF",
+    "icao24": "71be41"
+  },
+  {
+    "callsign": "DLH781  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": null,
+    "icao24": "3c64ed"
+  },
+  {
+    "callsign": "JKH32C  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDGE",
+    "icao24": "3ce624"
+  },
+  {
+    "callsign": "EZY453M ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDT",
+    "icao24": "440bd0"
+  },
+  {
+    "callsign": "FIN7RA  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EFHK",
+    "icao24": "461f6c"
+  },
+  {
+    "callsign": "DLH3CJ  ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EDDH",
+    "icao24": "3c6666"
+  },
+  {
+    "callsign": "DLH4H   ",
+    "estArrivalAirport": "EDDF",
+    "estDepartureAirport": "EGLL",
+    "icao24": "3c6659"
+  }
+]
