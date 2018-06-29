@@ -1,0 +1,102 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(ggmap)
+library(tidyverse)
+library(data.table)
+```
+
+```{r}
+setwd("~/PythonStuff/Project ArmBop/Robert/Data/")
+
+flight_dt=read_csv('Merged_Flights.csv')
+keys=read_csv('Keys.csv')
+Ccodes=read_csv('Carrier Code.csv')
+flight_dt=setDT(flight_dt)
+```
+
+```{r}
+names(flight_dt)=tolower(names(flight_dt))
+names(flight_dt)
+unique(flight_dt$origin_city_name)
+```
+
+
+
+```{r}
+unique(flight_dt$origin_city_name)
+cities = flight_dt[, c("origin_city_name", "dest_city_name")]
+
+destination_name = unique(cities$dest_city_name)
+origin_name = unique(cities$origin_city_name)
+
+destination_codes=geocode(unique(destination_name))
+origin_codes=geocode(unique(origin_name))
+
+
+destination=data.frame(destination_name ,destination_codes)
+origin=data.frame(origin_name,origin_codes)
+
+```
+
+```{r}
+city_coords=merge(destination, origin, by.x = ('destination_name'), by.y=('origin_name'))
+
+city_coords$lon = ifelse(!is.na(city_coords$lon.x), city_coords$lon.x, 
+ 	    ifelse(!is.na(city_coords$lon.y), city_coords$lon.y, NA))
+
+city_coords$lat = ifelse(!is.na(city_coords$lat.y), city_coords$lat.y,
+ 	    ifelse(!is.na(city_coords$lat.x), city_coords$lat.x, NA
+ 	    	  ))
+
+names(city_coords)[names(city_coords) == 'destination_name'] <- 'city_name'
+city_coords$lon.x = NULL
+city_coords$lon.y = NULL
+city_coords$lat.x = NULL
+city_coords$lat.y = NULL
+```
+
+```{r}
+fill_these=subset(city_coords, is.na(lat))
+fill_these$lat = NULL
+fill_these$lon = NULL
+
+fill_cities=as.character((fill_these$city_name))
+last_codes=geocode(fill_cities)
+
+sweep=data.frame(fill_cities ,last_codes)
+
+sweep$lat = -14.27806 
+sweep$lon = -170.7025
+
+
+sweep_insert = merge(city_coords, sweep, by.x = 'city_name', by.y = 'fill_cities', all.x = T)
+sweep_insert$lon = ifelse(!is.na(sweep_insert$lon.x), sweep_insert$lon.x, 
+ 	    ifelse(!is.na(sweep_insert$lon.y), sweep_insert$lon.y, NA))
+
+sweep_insert$lat = ifelse(!is.na(sweep_insert$lat.y), sweep_insert$lat.y,
+ 	    ifelse(!is.na(sweep_insert$lat.x), sweep_insert$lat.x, NA))
+
+sweep_insert$lon.x = NULL
+sweep_insert$lon.y = NULL
+sweep_insert$lat.x = NULL
+sweep_insert$lat.y = NULL
+city_coords = sweep_insert
+
+# city_coords$lat = ifelse((city_coords$city_name == sweep$fill_cities), sweep$lat, NA )
+# city_coords$lon = ifelse((city_coords$city_name == sweep$fill_cities), sweep$lon, NA  )
+
+
+sum(is.na(sweep_insert$lon))
+
+city_coordinates = city_coords
+anyNA((city_coordinates))
+
+write.csv(city_coordinates, 'city_coordinates.csv')
+city_coordinates
+```
+

@@ -1,0 +1,114 @@
+---
+title: "R Notebook"
+---
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+```{r}
+library(ggmap)
+library(tidyverse)
+library(data.table)
+```
+
+```{r}
+setwd("~/PythonStuff/Project-ArmBop/Robert/Data/")
+
+#flight_dt=read_csv('Merged_Flights.csv')
+keys=read_csv('Keys.csv')
+Ccodes=read_csv('Carrier Code.csv')
+
+Ccodes=subset(Ccodes, !is.na(End))
+coordinates=read_csv('city_coordinates.csv')
+flight_dt=setDT(flight_dt)
+```
+
+```{r}
+names(flight_dt)=tolower(names(flight_dt))
+names(flight_dt)
+flight_dt$x22 = NULL
+company = subset(Ccodes, select = c(Code,Name))
+#unique(flight_dt$origin_city_name)
+```
+
+
+
+```{r}
+flight_dt=merge(flight_dt, coordinates, by.x = 'dest_city_name', by.y = 'city_name')
+names(flight_dt)[names(flight_dt) == 'lat'] = 'dest_lat'
+names(flight_dt)[names(flight_dt) == 'lon'] = 'dest_lon'
+flight_dt$X1 = NULL
+
+flight_dt=merge(flight_dt, coordinates, by.x = 'origin_city_name', by.y = 'city_name')
+names(flight_dt)[names(flight_dt) == 'lat'] = 'origin_lat'
+names(flight_dt)[names(flight_dt) == 'lon'] = 'origin_lon'
+flight_dt$X1 = NULL
+flight_dt = subset(flight_dt, origin_city_name!= 'Pago Pago, TT' & dest_city_name!= 'Pago Pago, TT')
+flight_dt = subset(flight_dt, origin_city_name!= 'Guam, TT' & dest_city_name!= 'Guam, TT')
+flight_dt = subset(flight_dt, origin_city_name!= 'Ponce, PR' & dest_city_name!= 'Ponce, PR')
+flight_dt=subset(flight_dt,origin_city_name!='Charlotte Amalie, VI'&dest_city_name!='Charlotte Amalie, VI')
+flight_dt = subset(flight_dt, origin_city_name!= 'Aguadilla, PR' & dest_city_name!= 'Aguadilla, PR')
+flight_dt = subset(flight_dt, origin_city_name!= 'San Juan, PR' & dest_city_name!= 'San Juan, PR')
+flight_dt= subset(flight_dt, origin_city_name!='Christiansted, VI'&dest_city_name!='Christiansted, VI')
+
+flight_dt$one = 1
+```
+
+```{r}
+
+names(flight_dt)
+head(flight_dt)
+
+```
+
+```{r}
+# Destination / Origin
+
+flight_dt_most_dest=aggregate(one ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
+flight_dt_most_dest
+
+write.csv(flight_dt_most_dest,'map_app/www/flight_dt_most_dest.csv')
+
+flight_dt_most_origin=aggregate(one ~ origin_city_name+origin_lon+origin_lat, flight_dt, sum)
+flight_dt_most_origin
+
+write.csv(flight_dt_most_origin,'map_app/www/flight_dt_most_origin.csv')
+
+```
+
+```{r}
+
+
+delayed_flights=merge(flight_dt, company, by.x = "carrier", by.y = "Code", all.x = T)
+
+names(flight_dt)
+head(flight_dt)
+
+drops <- c("x","z")
+DF[ , !(names(DF) %in% drops)]
+```
+
+
+```{r}
+names(flight_dt)
+head(flight_dt)
+drops <- c("dest_lon","dest_lat", 'origin_lat', 'origin_lon', 'late_aircraft_delay', 'security_delay','nas_delay','carrier_delay','dest','origin', 'year','month', 'weather_delay','div_airport_landings','day_of_month')
+
+str(tiny_flights)
+
+flight_df=as.data.frame(flight_dt)
+tiny_flights=flight_df[ , !(names(flight_df) %in% drops)]
+names(tiny_flights)
+
+delayed_flights=aggregate(one ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
+
+delayed_flights=aggregate(one ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
+merge(flight_dt)
+
+
+
+delayed_flights
+
+
+```
+

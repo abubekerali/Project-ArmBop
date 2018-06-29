@@ -1,0 +1,10 @@
+name: shinyapp
+title:
+username:
+account: thirdhuman
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 369750
+bundleId: 1455539
+url: https://thirdhuman.shinyapps.io/shinyapp/
+when: 1530235497.25736
