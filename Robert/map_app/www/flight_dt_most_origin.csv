@@ -1,337 +1,337 @@
-"","origin_city_name","origin_lon","origin_lat","one"
-"1","Kona, HI",-155.9969261,19.639994,14159
-"2","Hilo, HI",-155.0868193,19.7241106,6208
-"3","Kahului, HI",-156.4729469,20.8893351,24607
-"4","Honolulu, HI",-157.8583333,21.3069444,48154
-"5","Lihue, HI",-159.3711111,21.9811111,13104
-"6","Key West, FL",-81.7799871,24.5550593,2816
-"7","Miami, FL",-80.1917902,25.7616798,71263
-"8","Brownsville, TX",-97.4974838,25.9017472,1434
-"9","Fort Lauderdale, FL",-80.1373174,26.1224386,88767
-"10","Harlingen/San Benito, TX",-97.6311006,26.132576,2826
-"11","Mission/McAllen/Edinburg, TX",-98.3252932,26.2159066,2815
-"12","Fort Myers, FL",-81.8723084,26.640628,31205
-"13","West Palm Beach/Palm Beach, FL",-80.0533746,26.7153424,24668
-"14","Punta Gorda, FL",-82.0453664,26.9297836,1976
-"15","Sarasota/Bradenton, FL",-82.5306527,27.3364347,3924
-"16","Laredo, TX",-99.4803241,27.5305671,1962
-"17","St. Petersburg, FL",-82.6402915,27.7676008,2559
-"18","Corpus Christi, TX",-97.396381,27.8005828,3585
-"19","Tampa, FL",-82.4571776,27.950575,70944
-"20","Melbourne, FL",-80.6081089,28.0836269,1871
-"21","Orlando, FL",-81.3792365,28.5383355,129151
-"22","Sanford, FL",-81.269453,28.8028612,3306
-"23","Daytona Beach, FL",-81.0228331,29.2108147,2515
-"24","San Antonio, TX",-98.4936282,29.4241219,35319
-"25","Gainesville, FL",-82.3248262,29.6516344,2157
-"26","Houston, TX",-95.3698028,29.7604267,196892
-"27","St. Augustine, FL",-81.3124341,29.9012437,60
-"28","New Orleans, LA",-90.0715323,29.9510658,50904
-"29","Beaumont/Port Arthur, TX",-94.1265562,30.080174,241
-"30","Panama City, FL",-85.6602058,30.1588129,4512
-"31","Lafayette, LA",-92.0198427,30.2240897,2987
-"32","Lake Charles, LA",-93.2173758,30.2265949,1284
-"33","Austin, TX",-97.7430608,30.267153,56026
-"34","Jacksonville, FL",-81.655651,30.3321838,20775
-"35","Gulfport/Biloxi, MS",-89.0928155,30.3674198,2893
-"36","Pensacola, FL",-87.2169149,30.421309,6872
-"37","Tallahassee, FL",-84.2807329,30.4382559,3348
-"38","Baton Rouge, LA",-91.1871466,30.4514677,6913
-"39","Valparaiso, FL",-86.5027282,30.5085309,4645
-"40","College Station/Bryan, TX",-96.3344068,30.627977,1650
-"41","Mobile, AL",-88.0398912,30.6953657,4556
-"42","Valdosta, GA",-83.2784851,30.8327022,668
-"43","Killeen, TX",-97.7277959,31.1171194,1865
-"44","Brunswick, GA",-81.4914894,31.1499528,695
-"45","Dothan, AL",-85.3904888,31.2232313,1293
-"46","Alexandria, LA",-92.4451371,31.3112936,1953
-"47","San Angelo, TX",-100.4370375,31.4637723,1074
-"48","Hattiesburg/Laurel, MS",-89.335421,31.468239,722
-"49","Waco, TX",-97.1466695,31.549333,468
-"50","Albany, GA",-84.155741,31.5785074,631
-"51","El Paso, TX",-106.4850217,31.7618778,12394
-"52","Midland/Odessa, TX",-102.3676431,31.8456816,6386
-"53","Savannah, GA",-81.091203,32.0808989,9945
-"54","Tucson, AZ",-110.9747108,32.2226066,15958
-"55","Tyler, TX",-95.3010624,32.3512601,478
-"56","Jackson/Vicksburg, MS",-90.8745758,32.3522304,5489
-"57","Meridian, MS",-88.703656,32.3643098,1087
-"58","Montgomery, AL",-86.2999689,32.3668052,2228
-"59","Abilene, TX",-99.7331439,32.4487364,630
-"60","Columbus, GA",-84.9877094,32.4609764,849
-"61","Longview, TX",-94.7404891,32.5007037,223
-"62","Monroe, LA",-92.1193012,32.5093109,2311
-"63","Shreveport, LA",-93.7501789,32.5251516,5285
-"64","Yuma, AZ",-114.6276916,32.6926512,1380
-"65","Hobbs, NM",-103.1360403,32.7026116,659
-"66","San Diego, CA",-117.1610838,32.715738,86872
-"67","Charleston, SC",-79.9310512,32.7764749,16759
-"68","Dallas, TX",-96.7969879,32.7766642,70155
-"69","Dallas/Fort Worth, TX",-97.0403352,32.8998091,210467
-"70","Roswell, NM",-104.5230242,33.3942655,715
-"71","Texarkana, AR",-94.0376881,33.4417915,329
-"72","Phoenix, AZ",-112.0740373,33.4483771,162296
-"73","Augusta, GA",-82.0105148,33.4734978,2796
-"74","Columbus, MS",-88.4272627,33.4956744,957
-"75","Birmingham, AL",-86.80249,33.5206608,13527
-"76","Lubbock, TX",-101.8551665,33.5778631,4858
-"77","Myrtle Beach, SC",-78.8866943,33.6890603,7669
-"78","Santa Ana, CA",-117.867653,33.7454725,41953
-"79","Atlanta, GA",-84.3879824,33.7489954,366563
-"80","Long Beach, CA",-118.1937395,33.7700504,17012
-"81","Palm Springs, CA",-116.5452921,33.8302961,9599
-"82","Wichita Falls, TX",-98.4933873,33.9137085,354
-"83","Columbia, SC",-81.0348144,34.0007104,4391
-"84","Los Angeles, CA",-118.2436849,34.0522342,216648
-"85","Ontario, CA",-117.6508876,34.0633443,21106
-"86","Burbank, CA",-118.3089661,34.1808392,26043
-"87","Florence, SC",-79.7625625,34.1954331,156
-"88","Wilmington, NC",-77.9447102,34.2257255,3293
-"89","Santa Barbara, CA",-119.6981901,34.4208305,5830
-"90","Lawton/Fort Sill, OK",-98.4184224,34.5938359,948
-"91","Jacksonville/Camp Lejeune, NC",-77.4013403,34.6250544,1473
-"92","New Bern/Morehead/Beaufort, NC",-76.7239774,34.6988297,826
-"93","Huntsville, AL",-86.5861037,34.7303688,5398
-"94","Little Rock, AR",-92.2895948,34.7464809,9295
-"95","Greer, SC",-82.2270568,34.9387279,8200
-"96","Santa Maria, CA",-120.4357191,34.9530337,52
-"97","Chattanooga, TN",-85.3096801,35.0456297,4884
-"98","Fayetteville, NC",-78.8783585,35.0526641,1937
-"99","Albuquerque, NM",-106.650422,35.0843859,20699
-"100","Bullhead City, AZ",-114.5285981,35.1359386,290
-"101","Memphis, TN",-90.0489801,35.1495343,17065
-"102","Flagstaff, AZ",-111.651302,35.1982836,1286
-"103","Amarillo, TX",-101.8312969,35.2219971,3692
-"104","Charlotte, NC",-80.8431267,35.2270869,149870
-"105","San Luis Obispo, CA",-120.6596156,35.2827524,3818
-"106","Bakersfield, CA",-119.0187125,35.3732921,2235
-"107","Fort Smith, AR",-94.3985475,35.3859242,1383
-"108","CONCORD, NC",-80.579511,35.4087517,292
-"109","Oklahoma City, OK",-97.5164276,35.4675602,17167
-"110","Asheville, NC",-82.5514869,35.5950581,4587
-"111","Greenville, NC",-77.3663538,35.612661,99
-"112","Santa Fe, NM",-105.937799,35.6869752,1456
-"113","Raleigh/Durham, NC",-78.8636402,35.8991678,43547
-"114","Knoxville, TN",-83.9207392,35.9606384,9194
-"115","Fayetteville, AR",-94.1718542,36.082156,7510
-"116","Greensboro/High Point, NC",-79.8296743,36.0899873,7847
-"117","Stillwater, OK",-97.0583681,36.1156071,227
-"118","Tulsa, OK",-95.992775,36.1539816,14779
-"119","Nashville, TN",-86.7816016,36.1626638,61065
-"120","Las Vegas, NV",-115.1398296,36.1699412,155112
-"121","Bristol/Johnson City/Kingsport, TN",-82.1888089,36.595141,2052
-"122","Monterey, CA",-121.8946761,36.6002378,2839
-"123","Fresno, CA",-119.7871247,36.7377981,8843
-"124","Norfolk, VA",-76.2858726,36.8507689,14663
-"125","Liberal, KS",-100.920999,37.0430812,143
-"126","Paducah, KY",-88.6000478,37.0833893,688
-"127","Joplin, MO",-94.513281,37.0842271,466
-"128","St. George, UT",-113.5684164,37.0965278,3030
-"129","Newport News/Williamsburg, VA",-76.492778,37.131667,1663
-"130","Springfield, MO",-93.2922989,37.2089572,4699
-"131","Roanoke, VA",-79.9414266,37.2709704,1765
-"132","Durango, CO",-107.8800667,37.27528,1926
-"133","Cape Girardeau, MO",-89.5181476,37.3058839,255
-"134","San Jose, CA",-121.8863286,37.3382082,51177
-"135","Ashland, WV",-81.3526016,37.4084488,130
-"136","Lynchburg, VA",-79.1422464,37.4137536,303
-"137","Richmond, VA",-77.4360481,37.5407246,18166
-"138","Mammoth Lakes, CA",-118.972079,37.648546,104
-"139","Cedar City, UT",-113.0618931,37.6774769,623
-"140","Wichita, KS",-97.330053,37.6871761,8713
-"141","Owensboro, KY",-87.1111676,37.7719074,37
-"142","San Francisco, CA",-122.4194155,37.7749295,177658
-"143","Lewisburg, WV",-80.4456303,37.8017879,58
-"144","Oakland, CA",-122.2711137,37.8043637,51222
-"145","Stockton, CA",-121.2907796,37.9577016,223
-"146","Evansville, IN",-87.5710898,37.9715592,2682
-"147","Garden City, KS",-100.8726618,37.9716898,240
-"148","Charlottesville, VA",-78.4766781,38.0293059,3270
-"149","Lexington, KY",-84.5037164,38.0405837,6353
-"150","Staunton, VA",-79.0716958,38.149576,74
-"151","Louisville, KY",-85.7584557,38.2526647,13473
-"152","Pueblo, CO",-104.6091409,38.2544472,329
-"153","Charleston/Dunbar, WV",-81.7373485,38.3606509,2789
-"154","Santa Rosa, CA",-122.7140548,38.440429,1482
-"155","Belleville, IL",-89.9839935,38.5200504,324
-"156","Gunnison, CO",-106.9253207,38.5458246,183
-"157","Sacramento, CA",-121.4943996,38.5815719,45838
-"158","St. Louis, MO",-90.1994042,38.6270025,59350
-"159","Montrose/Delta, CO",-108.0300893,38.7030605,920
-"160","Colorado Springs, CO",-104.8213634,38.8338816,9707
-"161","Salina, KS",-97.6114237,38.8402805,56
-"162","Hays, KS",-99.3267702,38.8791783,664
-"163","Washington, DC",-77.0368707,38.9071923,138488
-"164","Columbia, MO",-92.3340724,38.9517053,1338
-"165","Grand Junction, CO",-108.5506486,39.0638705,2877
-"166","Kansas City, MO",-94.5785667,39.0997265,48337
-"167","Cincinnati, OH",-84.5120196,39.1031182,29328
-"168","Manhattan/Ft. Riley, KS",-96.5716694,39.1836082,1435
-"169","Aspen, CO",-106.8175387,39.1910983,6260
-"170","Baltimore, MD",-76.6121893,39.2903848,103437
-"171","Atlantic City, NJ",-74.4229266,39.3642834,3444
-"172","Clarksburg/Fairmont, WV",-80.1425781,39.4850848,373
-"173","Reno, NV",-119.8138027,39.5296329,16590
-"174","Hagerstown, MD",-77.7199932,39.6417629,35
-"175","Eagle, CO",-106.8286507,39.6552634,1795
-"176","Denver, CO",-104.990251,39.7392358,226778
-"177","Dayton, OH",-84.1916069,39.7589478,8333
-"178","Indianapolis, IN",-86.158068,39.768403,34035
-"179","Springfield, IL",-89.6501481,39.7817213,1295
-"180","Quincy, IL",-91.4098726,39.9356016,384
-"181","Philadelphia, PA",-75.1652215,39.9525839,85047
-"182","Columbus, OH",-82.9987942,39.9611755,30986
-"183","Champaign/Urbana, IL",-88.2433829,40.1164204,762
-"184","Trenton, NJ",-74.759717,40.2205824,2149
-"185","Provo, UT",-111.6585337,40.2338438,169
-"186","Harrisburg, PA",-76.8867008,40.2731911,4263
-"187","Latrobe, PA",-79.3794811,40.3211808,1057
-"188","Pittsburgh, PA",-79.9958864,40.4406248,35199
-"189","Hayden, CO",-107.2636842,40.4894302,1131
-"190","Bloomington/Normal, IL",-88.9906312,40.5142026,2537
-"191","Redding, CA",-122.3916754,40.5865396,1065
-"192","Allentown/Bethlehem/Easton, PA",-75.441415,40.651834,2854
-"193","Peoria, IL",-89.5889864,40.6936488,3653
-"194","New York, NY",-74.0059728,40.7127753,218826
-"195","Islip, NY",-73.2103934,40.7298207,5923
-"196","Newark, NJ",-74.1723667,40.735657,123906
-"197","Salt Lake City, UT",-111.8910474,40.7607793,112248
-"198","State College, PA",-77.8600012,40.7933949,1494
-"199","Lincoln, NE",-96.7025955,40.813616,2526
-"200","Elko, NV",-115.7631232,40.8324211,660
-"201","Grand Island, NE",-98.3420118,40.9263957,533
-"202","Arcata/Eureka, CA",-124.1065825,40.9709197,1204
-"203","White Plains, NY",-73.7629097,41.0339862,7685
-"204","Fort Wayne, IN",-85.1393513,41.079273,6144
-"205","Akron, OH",-81.5190053,41.0814447,6180
-"206","North Platte, NE",-100.7601454,41.1402759,150
-"207","Ogden, UT",-111.9738304,41.223,55
-"208","Youngstown/Warren, OH",-80.8184166,41.2375569,2
-"209","Omaha, NE",-95.9345034,41.2565369,20869
-"210","Nantucket, MA",-70.099451,41.2834704,665
-"211","Scranton/Wilkes-Barre, PA",-75.9927652,41.2981769,2407
-"212","New Haven, CT",-72.9278835,41.308274,344
-"213","Laramie, WY",-105.5911007,41.3113669,624
-"214","Martha's Vineyard, MA",-70.645473,41.3804981,241
-"215","Cleveland, OH",-81.6943605,41.49932,40705
-"216","Moline, IL",-90.5151342,41.5067003,3658
-"217","Rock Springs, WY",-109.2029043,41.5874644,673
-"218","Des Moines, IA",-93.6091064,41.6005448,10464
-"219","Newburgh/Poughkeepsie, NY",-73.7477857,41.6230989,1516
-"220","Hyannis, MA",-70.2881124,41.6524911,94
-"221","Toledo, OH",-83.5378674,41.6528052,942
-"222","South Bend, IN",-86.2519898,41.6763545,5653
-"223","Hartford, CT",-72.6733723,41.7658043,23966
-"224","Providence, RI",-71.4128343,41.8239891,15390
-"225","Scottsbluff, NE",-103.6671662,41.8666341,155
-"226","Chicago, IL",-87.6297982,41.8781136,375211
-"227","Cedar Rapids/Iowa City, IA",-104.990251,41.9778795,6878
-"228","Binghamton, NY",-75.9179738,42.0986867,874
-"229","Erie, PA",-80.085059,42.1292241,1369
-"230","Elmira/Corning, NY",-76.893638,42.15987,288
-"231","Worcester, MA",-71.8022934,42.2625932,718
-"232","Rockford, IL",-89.0939952,42.2711311,258
-"233","Kalamazoo, MI",-85.5872286,42.2917069,2341
-"234","Medford, OR",-122.8755949,42.3265152,3852
-"235","Detroit, MI",-83.0457538,42.331427,137387
-"236","Boston, MA",-71.0588801,42.3600825,131539
-"237","Ithaca/Cortland, NY",-76.5002026,42.4383677,1002
-"238","Waterloo, IA",-92.3425775,42.492786,647
-"239","Sioux City, IA",-96.4049408,42.4963416,397
-"240","Dubuque, IA",-90.6645718,42.5005583,343
-"241","Twin Falls, ID",-114.4700518,42.5558381,1169
-"242","Albany, NY",-73.7562317,42.6525793,10548
-"243","Lansing, MI",-84.5555347,42.732535,2576
-"244","Casper, WY",-106.3251749,42.8500769,811
-"245","Pocatello, ID",-112.4506191,42.8621042,1068
-"246","Buffalo, NY",-78.8783689,42.8864468,20374
-"247","Grand Rapids, MI",-85.6680863,42.9633599,12662
-"248","Manchester, NH",-71.4547891,42.9956397,7738
-"249","Flint, MI",-83.6874562,43.0125274,4107
-"250","Milwaukee, WI",-87.9064736,43.0389025,30961
-"251","Syracuse, NY",-76.1474244,43.0481221,8781
-"252","Portsmouth, NH",-70.7625532,43.0717552,117
-"253","Madison, WI",-89.4012302,43.0730517,10001
-"254","Niagara Falls, NY",-79.0377388,43.0962143,608
-"255","Rochester, NY",-77.6088465,43.1565779,9693
-"256","Muskegon, MI",-86.2483921,43.2341813,686
-"257","North Bend/Coos Bay, OR",-124.2242803,43.4065012,326
-"258","Jackson, WY",-110.7624282,43.4799291,3725
-"259","Idaho Falls, ID",-112.0407584,43.4926607,2455
-"260","Saginaw/Bay City/Midland, MI",-84.081498,43.538647,2711
-"261","Sioux Falls, SD",-96.7311034,43.5445959,4990
-"262","Boise, ID",-116.2023137,43.6150186,17288
-"263","Portland, ME",-70.2568189,43.6590993,7327
-"264","Sun Valley/Hailey/Ketchum, ID",-114.3311763,43.6761518,1277
-"265","La Crosse, WI",-91.2519017,43.8137751,2096
-"266","Rochester, MN",-92.4801989,44.0121221,3117
-"267","Eugene, OR",-123.0867536,44.0520691,4149
-"268","Rapid City, SD",-103.2310149,44.0805434,3545
-"269","Bend/Redmond, OR",-121.299079,44.1617823,3902
-"270","Appleton, WI",-88.4153847,44.2619309,3325
-"271","Gillette, WY",-105.5022205,44.2910915,976
-"272","Burlington, VT",-73.212072,44.4758825,5036
-"273","Green Bay, WI",-88.0132958,44.5133188,4425
-"274","Cody, WY",-109.0565308,44.5263422,991
-"275","West Yellowstone, MT",-111.1041092,44.6621493,232
-"276","Ogdensburg, NY",-75.4863364,44.6942291,68
-"277","Plattsburgh, NY",-73.4529124,44.6994873,561
-"278","Traverse City, MI",-85.6206317,44.7630567,3272
-"279","Mosinee, WI",-89.7031784,44.7930232,1704
-"280","Bangor, ME",-68.7712257,44.8016128,1894
-"281","Eau Claire, WI",-91.4984941,44.811349,687
-"282","Minneapolis, MN",-93.2650108,44.977753,143233
-"283","Alpena, MI",-83.4327528,45.0616794,623
-"284","Aberdeen, SD",-98.4864829,45.4646985,728
-"285","Portland, OR",-122.6587185,45.5122308,63687
-"286","Pellston, MI",-84.7839364,45.552789,1024
-"287","St. Cloud, MN",-94.1632404,45.5579451,71
-"288","Rhinelander, WI",-89.4120753,45.6366228,726
-"289","Bozeman, MT",-111.0429339,45.6769979,5555
-"290","Escanaba, MI",-87.0645801,45.7452466,625
-"291","Billings, MT",-108.5006904,45.7832856,3670
-"292","Iron Mountain/Kingsfd, MI",-88.0720706,45.7949561,676
-"293","Butte, MT",-112.5347775,46.0038232,675
-"294","Pasco/Kennewick/Richland, WA",-119.119948,46.2086683,3804
-"295","Brainerd, MN",-94.2020084,46.3526733,637
-"296","Lewiston, ID",-117.001189,46.4004089,759
-"297","Sault Ste. Marie, MI",-84.3475876,46.4977115,676
-"298","Marquette, MI",-87.3955954,46.5475825,1010
-"299","Helena, MT",-112.0391057,46.5891452,1670
-"300","Duluth, MN",-92.1004852,46.7866719,2724
-"301","Bismarck/Mandan, ND",-100.8895761,46.8266603,2909
-"302","Missoula, MT",-113.9940314,46.8721284,2481
-"303","Fargo, ND",-96.7898034,46.8771863,4141
-"304","Jamestown, ND",-98.7084357,46.9105438,987
-"305","Hancock/Houghton, MI",-88.5809563,47.1268714,727
-"306","Hibbing, MN",-92.9376887,47.4271546,624
-"307","Bemidji, MN",-94.8826861,47.471573,727
-"308","Great Falls, MT",-111.3007715,47.5052849,1636
-"309","Seattle, WA",-122.3320708,47.6062095,139132
-"310","Spokane, WA",-117.4260465,47.6587802,12143
-"311","Grand Forks, ND",-97.0328547,47.9252568,1568
-"312","Devils Lake, ND",-98.8651202,48.112779,624
-"313","Williston, ND",-103.6179745,48.1469683,1326
-"314","Kalispell, MT",-114.316813,48.1919889,2369
-"315","Minot, ND",-101.2922906,48.2329668,1957
-"316","International Falls, MN",-93.4040679,48.6023149,625
-"317","Bellingham, WA",-122.4786854,48.7519112,1381
-"318","Adak Island, AK",-176.6217472,51.7615874,103
-"319","Ketchikan, AK",-131.6461112,55.3422222,2426
-"320","Wrangell, AK",-132.3766666,56.4708333,726
-"321","Petersburg, AK",-132.9555556,56.8125,726
-"322","Sitka, AK",-135.33,57.0530556,1344
-"323","Kodiak, AK",-152.4072221,57.79,645
-"324","Juneau, AK",-134.4197221,58.3019444,4429
-"325","Gustavus, AK",-135.7369443,58.4133333,84
-"326","King Salmon, AK",-156.661351,58.6883251,63
-"327","Dillingham, AK",-158.4575,59.0397222,84
-"328","Yakutat, AK",-139.7272808,59.5469878,724
-"329","Cordova, AK",-145.7525414,60.5424087,724
-"330","Bethel, AK",-161.7558334,60.7922222,919
-"331","Anchorage, AK",-149.9002778,61.2180556,17449
-"332","Nome, AK",-165.4063889,64.5011111,718
-"333","Fairbanks, AK",-147.7163888,64.8377778,3603
-"334","Kotzebue, AK",-162.5966666,66.8983333,720
-"335","Deadhorse, AK",-148.4597191,70.2001996,763
-"336","Barrow, AK",-156.788611,71.2905556,833
+"","origin_city_name","origin.sum"
+"1","Aberdeen, SD",728
+"2","Abilene, TX",630
+"3","Adak Island, AK",103
+"4","Akron, OH",6180
+"5","Albany, GA",631
+"6","Albany, NY",10548
+"7","Albuquerque, NM",20699
+"8","Alexandria, LA",1953
+"9","Allentown/Bethlehem/Easton, PA",2854
+"10","Alpena, MI",623
+"11","Amarillo, TX",3692
+"12","Anchorage, AK",17449
+"13","Appleton, WI",3325
+"14","Arcata/Eureka, CA",1204
+"15","Asheville, NC",4587
+"16","Ashland, WV",130
+"17","Aspen, CO",6260
+"18","Atlanta, GA",366563
+"19","Atlantic City, NJ",3444
+"20","Augusta, GA",2796
+"21","Austin, TX",56026
+"22","Bakersfield, CA",2235
+"23","Baltimore, MD",103437
+"24","Bangor, ME",1894
+"25","Barrow, AK",833
+"26","Baton Rouge, LA",6913
+"27","Beaumont/Port Arthur, TX",241
+"28","Belleville, IL",324
+"29","Bellingham, WA",1381
+"30","Bemidji, MN",727
+"31","Bend/Redmond, OR",3902
+"32","Bethel, AK",919
+"33","Billings, MT",3670
+"34","Binghamton, NY",874
+"35","Birmingham, AL",13527
+"36","Bismarck/Mandan, ND",2909
+"37","Bloomington/Normal, IL",2537
+"38","Boise, ID",17288
+"39","Boston, MA",131539
+"40","Bozeman, MT",5555
+"41","Brainerd, MN",637
+"42","Bristol/Johnson City/Kingsport, TN",2052
+"43","Brownsville, TX",1434
+"44","Brunswick, GA",695
+"45","Buffalo, NY",20374
+"46","Bullhead City, AZ",290
+"47","Burbank, CA",26043
+"48","Burlington, VT",5036
+"49","Butte, MT",675
+"50","Cape Girardeau, MO",255
+"51","Casper, WY",811
+"52","Cedar City, UT",623
+"53","Cedar Rapids/Iowa City, IA",6878
+"54","Champaign/Urbana, IL",762
+"55","Charleston, SC",16759
+"56","Charleston/Dunbar, WV",2789
+"57","Charlotte, NC",149870
+"58","Charlottesville, VA",3270
+"59","Chattanooga, TN",4884
+"60","Chicago, IL",375211
+"61","Cincinnati, OH",29328
+"62","Clarksburg/Fairmont, WV",373
+"63","Cleveland, OH",40705
+"64","Cody, WY",991
+"65","College Station/Bryan, TX",1650
+"66","Colorado Springs, CO",9707
+"67","Columbia, MO",1338
+"68","Columbia, SC",4391
+"69","Columbus, GA",849
+"70","Columbus, MS",957
+"71","Columbus, OH",30986
+"72","CONCORD, NC",292
+"73","Cordova, AK",724
+"74","Corpus Christi, TX",3585
+"75","Dallas, TX",70155
+"76","Dallas/Fort Worth, TX",210467
+"77","Dayton, OH",8333
+"78","Daytona Beach, FL",2515
+"79","Deadhorse, AK",763
+"80","Denver, CO",226778
+"81","Des Moines, IA",10464
+"82","Detroit, MI",137387
+"83","Devils Lake, ND",624
+"84","Dillingham, AK",84
+"85","Dothan, AL",1293
+"86","Dubuque, IA",343
+"87","Duluth, MN",2724
+"88","Durango, CO",1926
+"89","Eagle, CO",1795
+"90","Eau Claire, WI",687
+"91","El Paso, TX",12394
+"92","Elko, NV",660
+"93","Elmira/Corning, NY",288
+"94","Erie, PA",1369
+"95","Escanaba, MI",625
+"96","Eugene, OR",4149
+"97","Evansville, IN",2682
+"98","Fairbanks, AK",3603
+"99","Fargo, ND",4141
+"100","Fayetteville, AR",7510
+"101","Fayetteville, NC",1937
+"102","Flagstaff, AZ",1286
+"103","Flint, MI",4107
+"104","Florence, SC",156
+"105","Fort Lauderdale, FL",88767
+"106","Fort Myers, FL",31205
+"107","Fort Smith, AR",1383
+"108","Fort Wayne, IN",6144
+"109","Fresno, CA",8843
+"110","Gainesville, FL",2157
+"111","Garden City, KS",240
+"112","Gillette, WY",976
+"113","Grand Forks, ND",1568
+"114","Grand Island, NE",533
+"115","Grand Junction, CO",2877
+"116","Grand Rapids, MI",12662
+"117","Great Falls, MT",1636
+"118","Green Bay, WI",4425
+"119","Greensboro/High Point, NC",7847
+"120","Greenville, NC",99
+"121","Greer, SC",8200
+"122","Gulfport/Biloxi, MS",2893
+"123","Gunnison, CO",183
+"124","Gustavus, AK",84
+"125","Hagerstown, MD",35
+"126","Hancock/Houghton, MI",727
+"127","Harlingen/San Benito, TX",2826
+"128","Harrisburg, PA",4263
+"129","Hartford, CT",23966
+"130","Hattiesburg/Laurel, MS",722
+"131","Hayden, CO",1131
+"132","Hays, KS",664
+"133","Helena, MT",1670
+"134","Hibbing, MN",624
+"135","Hilo, HI",6208
+"136","Hobbs, NM",659
+"137","Honolulu, HI",48154
+"138","Houston, TX",196892
+"139","Huntsville, AL",5398
+"140","Hyannis, MA",94
+"141","Idaho Falls, ID",2455
+"142","Indianapolis, IN",34035
+"143","International Falls, MN",625
+"144","Iron Mountain/Kingsfd, MI",676
+"145","Islip, NY",5923
+"146","Ithaca/Cortland, NY",1002
+"147","Jackson, WY",3725
+"148","Jackson/Vicksburg, MS",5489
+"149","Jacksonville, FL",20775
+"150","Jacksonville/Camp Lejeune, NC",1473
+"151","Jamestown, ND",987
+"152","Joplin, MO",466
+"153","Juneau, AK",4429
+"154","Kahului, HI",24607
+"155","Kalamazoo, MI",2341
+"156","Kalispell, MT",2369
+"157","Kansas City, MO",48337
+"158","Ketchikan, AK",2426
+"159","Key West, FL",2816
+"160","Killeen, TX",1865
+"161","King Salmon, AK",63
+"162","Knoxville, TN",9194
+"163","Kodiak, AK",645
+"164","Kona, HI",14159
+"165","Kotzebue, AK",720
+"166","La Crosse, WI",2096
+"167","Lafayette, LA",2987
+"168","Lake Charles, LA",1284
+"169","Lansing, MI",2576
+"170","Laramie, WY",624
+"171","Laredo, TX",1962
+"172","Las Vegas, NV",155112
+"173","Latrobe, PA",1057
+"174","Lawton/Fort Sill, OK",948
+"175","Lewisburg, WV",58
+"176","Lewiston, ID",759
+"177","Lexington, KY",6353
+"178","Liberal, KS",143
+"179","Lihue, HI",13104
+"180","Lincoln, NE",2526
+"181","Little Rock, AR",9295
+"182","Long Beach, CA",17012
+"183","Longview, TX",223
+"184","Los Angeles, CA",216648
+"185","Louisville, KY",13473
+"186","Lubbock, TX",4858
+"187","Lynchburg, VA",303
+"188","Madison, WI",10001
+"189","Mammoth Lakes, CA",104
+"190","Manchester, NH",7738
+"191","Manhattan/Ft. Riley, KS",1435
+"192","Marquette, MI",1010
+"193","Martha's Vineyard, MA",241
+"194","Medford, OR",3852
+"195","Melbourne, FL",1871
+"196","Memphis, TN",17065
+"197","Meridian, MS",1087
+"198","Miami, FL",71263
+"199","Midland/Odessa, TX",6386
+"200","Milwaukee, WI",30961
+"201","Minneapolis, MN",143233
+"202","Minot, ND",1957
+"203","Mission/McAllen/Edinburg, TX",2815
+"204","Missoula, MT",2481
+"205","Mobile, AL",4556
+"206","Moline, IL",3658
+"207","Monroe, LA",2311
+"208","Monterey, CA",2839
+"209","Montgomery, AL",2228
+"210","Montrose/Delta, CO",920
+"211","Mosinee, WI",1704
+"212","Muskegon, MI",686
+"213","Myrtle Beach, SC",7669
+"214","Nantucket, MA",665
+"215","Nashville, TN",61065
+"216","New Bern/Morehead/Beaufort, NC",826
+"217","New Haven, CT",344
+"218","New Orleans, LA",50904
+"219","New York, NY",218826
+"220","Newark, NJ",123906
+"221","Newburgh/Poughkeepsie, NY",1516
+"222","Newport News/Williamsburg, VA",1663
+"223","Niagara Falls, NY",608
+"224","Nome, AK",718
+"225","Norfolk, VA",14663
+"226","North Bend/Coos Bay, OR",326
+"227","North Platte, NE",150
+"228","Oakland, CA",51222
+"229","Ogden, UT",55
+"230","Ogdensburg, NY",68
+"231","Oklahoma City, OK",17167
+"232","Omaha, NE",20869
+"233","Ontario, CA",21106
+"234","Orlando, FL",129151
+"235","Owensboro, KY",37
+"236","Paducah, KY",688
+"237","Palm Springs, CA",9599
+"238","Panama City, FL",4512
+"239","Pasco/Kennewick/Richland, WA",3804
+"240","Pellston, MI",1024
+"241","Pensacola, FL",6872
+"242","Peoria, IL",3653
+"243","Petersburg, AK",726
+"244","Philadelphia, PA",85047
+"245","Phoenix, AZ",162296
+"246","Pittsburgh, PA",35199
+"247","Plattsburgh, NY",561
+"248","Pocatello, ID",1068
+"249","Portland, ME",7327
+"250","Portland, OR",63687
+"251","Portsmouth, NH",117
+"252","Providence, RI",15390
+"253","Provo, UT",169
+"254","Pueblo, CO",329
+"255","Punta Gorda, FL",1976
+"256","Quincy, IL",384
+"257","Raleigh/Durham, NC",43547
+"258","Rapid City, SD",3545
+"259","Redding, CA",1065
+"260","Reno, NV",16590
+"261","Rhinelander, WI",726
+"262","Richmond, VA",18166
+"263","Roanoke, VA",1765
+"264","Rochester, MN",3117
+"265","Rochester, NY",9693
+"266","Rock Springs, WY",673
+"267","Rockford, IL",258
+"268","Roswell, NM",715
+"269","Sacramento, CA",45838
+"270","Saginaw/Bay City/Midland, MI",2711
+"271","Salina, KS",56
+"272","Salt Lake City, UT",112248
+"273","San Angelo, TX",1074
+"274","San Antonio, TX",35319
+"275","San Diego, CA",86872
+"276","San Francisco, CA",177658
+"277","San Jose, CA",51177
+"278","San Luis Obispo, CA",3818
+"279","Sanford, FL",3306
+"280","Santa Ana, CA",41953
+"281","Santa Barbara, CA",5830
+"282","Santa Fe, NM",1456
+"283","Santa Maria, CA",52
+"284","Santa Rosa, CA",1482
+"285","Sarasota/Bradenton, FL",3924
+"286","Sault Ste. Marie, MI",676
+"287","Savannah, GA",9945
+"288","Scottsbluff, NE",155
+"289","Scranton/Wilkes-Barre, PA",2407
+"290","Seattle, WA",139132
+"291","Shreveport, LA",5285
+"292","Sioux City, IA",397
+"293","Sioux Falls, SD",4990
+"294","Sitka, AK",1344
+"295","South Bend, IN",5653
+"296","Spokane, WA",12143
+"297","Springfield, IL",1295
+"298","Springfield, MO",4699
+"299","St. Augustine, FL",60
+"300","St. Cloud, MN",71
+"301","St. George, UT",3030
+"302","St. Louis, MO",59350
+"303","St. Petersburg, FL",2559
+"304","State College, PA",1494
+"305","Staunton, VA",74
+"306","Stillwater, OK",227
+"307","Stockton, CA",223
+"308","Sun Valley/Hailey/Ketchum, ID",1277
+"309","Syracuse, NY",8781
+"310","Tallahassee, FL",3348
+"311","Tampa, FL",70944
+"312","Texarkana, AR",329
+"313","Toledo, OH",942
+"314","Traverse City, MI",3272
+"315","Trenton, NJ",2149
+"316","Tucson, AZ",15958
+"317","Tulsa, OK",14779
+"318","Twin Falls, ID",1169
+"319","Tyler, TX",478
+"320","Valdosta, GA",668
+"321","Valparaiso, FL",4645
+"322","Waco, TX",468
+"323","Washington, DC",138488
+"324","Waterloo, IA",647
+"325","West Palm Beach/Palm Beach, FL",24668
+"326","West Yellowstone, MT",232
+"327","White Plains, NY",7685
+"328","Wichita Falls, TX",354
+"329","Wichita, KS",8713
+"330","Williston, ND",1326
+"331","Wilmington, NC",3293
+"332","Worcester, MA",718
+"333","Wrangell, AK",726
+"334","Yakutat, AK",724
+"335","Youngstown/Warren, OH",2
+"336","Yuma, AZ",1380

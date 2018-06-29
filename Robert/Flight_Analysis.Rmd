@@ -1,24 +1,58 @@
 ---
 title: "R Notebook"
 ---
-
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
-
 ```{r}
 library(ggmap)
 library(tidyverse)
 library(data.table)
+
+myAgg <- function (formula, data, FUN, ..., subset, na.action = na.omit) 
+{
+  if (missing(formula) || !inherits(formula, "formula")) 
+    stop("'formula' missing or incorrect")
+  if (length(formula) != 3L) 
+    stop("'formula' must have both left and right hand sides")
+  m <- match.call(expand.dots = FALSE)
+  if (is.matrix(eval(m$data, parent.frame()))) 
+    m$data <- as.data.frame(data)
+  m$... <- m$FUN <- NULL
+  m[[1L]] <- as.name("model.frame")
+  if (formula[[2L]] == ".") {
+    rhs <- unlist(strsplit(deparse(formula[[3L]]), " *[:+] *"))
+    lhs <- sprintf("cbind(%s)", paste(setdiff(names(data), 
+                                              rhs), collapse = ","))
+    lhs
+    m[[2L]][[2L]] <- parse(text = lhs)[[1L]]
+  }
+  mf <- eval(m, parent.frame())
+  if (is.matrix(mf[[1L]])) {
+    lhs <- as.data.frame(mf[[1L]])
+    names(lhs) <- as.character(m[[2L]][[2L]])[-1L]
+    myOut <- aggregate.data.frame(lhs, mf[-1L], FUN = FUN, ...)
+    colnames(myOut) <- c(names(mf[-1L]), 
+                         paste(names(lhs), deparse(substitute(FUN)), sep = "."))
+  }
+  else {
+    myOut <- aggregate.data.frame(mf[1L], mf[-1L], FUN = FUN, ...)
+    colnames(myOut) <- c(names(mf[-1L]), 
+                         paste(strsplit(gsub("cbind\\(|\\)|\\s", "", 
+                                             names(mf[1L])), ",")[[1]],
+                               deparse(substitute(FUN)), sep = "."))
+  } 
+  myOut
+}
+
 ```
 
 ```{r}
 setwd("~/PythonStuff/Project-ArmBop/Robert/Data/")
 
-#flight_dt=read_csv('Merged_Flights.csv')
+flight_dt=read_csv('Merged_Flights.csv')
 keys=read_csv('Keys.csv')
 Ccodes=read_csv('Carrier Code.csv')
 
-Ccodes=subset(Ccodes, !is.na(End))
+Ccodes=subset(Ccodes, is.na(End))
 coordinates=read_csv('city_coordinates.csv')
 flight_dt=setDT(flight_dt)
 ```
@@ -55,37 +89,39 @@ flight_dt$one = 1
 ```
 
 ```{r}
-
 names(flight_dt)
 head(flight_dt)
-
 ```
 
 ```{r}
 # Destination / Origin
 
-flight_dt_most_dest=aggregate(one ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
-flight_dt_most_dest
+flight_dt_most_dest=myAgg(one ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
+names(flight_dt_most_dest)[names(flight_dt_most_dest) == 'one.sum'] <- 'dest.sum'
+#flight_dt_most_dest
 
-write.csv(flight_dt_most_dest,'map_app/www/flight_dt_most_dest.csv')
+flight_dt_most_origin=myAgg(one ~ origin_city_name, flight_dt, sum)
+names(flight_dt_most_origin)[names(flight_dt_most_origin) == 'one.sum'] <- 'origin.sum'
+#flight_dt_most_origin
 
-flight_dt_most_origin=aggregate(one ~ origin_city_name+origin_lon+origin_lat, flight_dt, sum)
-flight_dt_most_origin
+flight_dt_most=merge(flight_dt_most_dest, flight_dt_most_origin, by.x = 'dest_city_name', by.y = 'origin_city_name', all = T)
+names(flight_dt_most)[names(flight_dt_most) == 'dest_city_name'] <- 'city_name'
+names(flight_dt_most)[names(flight_dt_most) == 'dest_lon'] <- 'lon'
+names(flight_dt_most)[names(flight_dt_most) == 'dest_lat'] <- 'lat'
 
-write.csv(flight_dt_most_origin,'map_app/www/flight_dt_most_origin.csv')
+flight_dt_most
+
+write.csv(flight_dt_most,'map_app/www/flight_dt_most.csv')
 
 ```
 
 ```{r}
 
 
-delayed_flights=merge(flight_dt, company, by.x = "carrier", by.y = "Code", all.x = T)
 
 names(flight_dt)
 head(flight_dt)
 
-drops <- c("x","z")
-DF[ , !(names(DF) %in% drops)]
 ```
 
 
@@ -94,18 +130,17 @@ names(flight_dt)
 head(flight_dt)
 drops <- c("dest_lon","dest_lat", 'origin_lat', 'origin_lon', 'late_aircraft_delay', 'security_delay','nas_delay','carrier_delay','dest','origin', 'year','month', 'weather_delay','div_airport_landings','day_of_month')
 
-str(tiny_flights)
 
 flight_df=as.data.frame(flight_dt)
 tiny_flights=flight_df[ , !(names(flight_df) %in% drops)]
+tiny_flights=merge(tiny_flights, company, by.x = "carrier", by.y = "Code", all.x = T)
 names(tiny_flights)
+str(tiny_flights)
 
 delayed_flights=aggregate(one ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
 
 delayed_flights=aggregate(one ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
-merge(flight_dt)
-
-
+#merge(flight_dt)
 
 delayed_flights
 

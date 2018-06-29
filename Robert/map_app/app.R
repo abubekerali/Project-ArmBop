@@ -10,6 +10,7 @@
 library(rsconnect)
 rsconnect::deployApp('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
 
+setwd('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
 dest=read.csv('www/flight_dt_most_dest.csv')
 origin=read.csv('www/flight_dt_most_origin.csv')
 head(origin,10)
@@ -20,9 +21,15 @@ origin <- dplyr::filter(origin, one > 0) %>%
 
 library(leaflet)
 library(shiny)
+library(shinydashboard)
+
 
 shinyApp(
-  ui = fluidPage(
+ui <- dashboardPage(
+  dashboardHeader(),
+  dashboardSidebar(),
+  dashboardBody(
+    tags$style(type = "text/css", "#MapPlot1 {height: calc(100vh - 80px) !important;}"),
     sliderInput(inputId = "flights", 
                 label = "Flights Originating", 
                 min = -50, max = 15000, value = 0, step = 500),
@@ -31,7 +38,8 @@ shinyApp(
                 label = "City", 
                 choices = sort(unique(origin$origin_city_name)))),
     leafletOutput("MapPlot1")
-  ),
+  )
+),
   
   server = function(input, output) {
     
