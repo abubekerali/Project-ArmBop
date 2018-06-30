@@ -116,7 +116,7 @@ d_weather_delay=myAgg(weather_delay ~ dest_city_name+dest_lon+dest_lat, flight_d
 d_nas_delay=myAgg(nas_delay ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
 d_security_delay=myAgg(security_delay ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
 d_late_aircraft_delay=myAgg(late_aircraft_delay ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
-flight_info_dest=Reduce(function(x, y) merge(x, y, all=TRUE), list(d_flight_dt_cancel, d_flight_dt_delay,d_nas_delay,d_carrier_delay,d_weather_delay,d_security_delay,d_late_aircraft_delay))
+flight_info_dest=Reduce(function(x, y) merge(x, y, all=TRUE), list(flight_dt_most_dest,d_flight_dt_cancel, d_flight_dt_delay,d_nas_delay,d_carrier_delay,d_weather_delay,d_security_delay,d_late_aircraft_delay))
 names(flight_info_dest)[names(flight_info_dest) == 'dest_city_name'] <- 'city_name'
 names(flight_info_dest)[names(flight_info_dest) == 'dest_lon'] <- 'lon'
 names(flight_info_dest)[names(flight_info_dest) == 'dest_lat'] <- 'lat'
