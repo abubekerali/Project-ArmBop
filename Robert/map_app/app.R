@@ -7,10 +7,6 @@
 #    http://shiny.rstudio.com/
 #
 
-rsconnect::setAccountInfo(name='thirdhuman',
- 			  token='9ED0BCABBE9FC1AA7528BA7F6514FA3E',
- 			  secret='OTsQxKA1hT7PVOJiYyp+qxVeeISFhqxEganPET0U')
-
 library(leaflet)
 library(shinydashboard)
 library(shiny)
@@ -22,8 +18,8 @@ library(leaflet.minicharts)
 
 #setwd('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
 
-map_data=read.csv('www/map_data.csv')
-map_data <- dplyr::filter(map_data, flights.sum > 0) %>% mutate_at(vars(lat, lon, flights.sum, cancelled.counter, delay.counter, nas_delay.counter,carrier_delay.counter,weather_delay.counter,security_delay.counter,late_aircraft_delay.counter),funs(as.numeric)) %>% na.omit
+map_data=read.csv('www/map_data.csv', skipNul = T)
+# map_data <- dplyr::filter(map_data, flights.sum > 0) %>% mutate_at(vars(lat, lon, flights.sum, cancelled.counter, delay.counter, nas_delay.counter,carrier_delay.counter,weather_delay.counter,security_delay.counter,late_aircraft_delay.counter),funs(as.numeric)) %>% na.omit
 
 
 # Define UI for application that draws a map
@@ -63,7 +59,7 @@ server = function(input, output) {
 
      observe({
 	      type <- input$type
-	      city <- input$city
+	      city <- input$city_name
 	      variable <- input$variable
 	      
 	pal <- colorNumeric("YlOrRd", domain = as.numeric(map_data[[variable]]))
@@ -75,14 +71,16 @@ server = function(input, output) {
                   radius = radius
       		 #,fillColor = ~pal(as.numeric(variable))
       		 )
-
       m %>% addMeasure(
 		    position = "bottomleft",
 		    primaryLengthUnit = "miles",
 		    primaryAreaUnit = "sqmiles",
 		    activeColor = "#3D535D",
 		    completedColor = "#7D4479")
-   
+      
+  #     m %>% addTiles() %>%
+  # addMarkers(~map_data$lon, ~map_data$lat, popup = ~htmlEscape(map_data$city_name)
+  # 		 )
+
   })
 })
-rsconnect::deployApp()

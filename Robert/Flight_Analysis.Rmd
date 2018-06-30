@@ -208,14 +208,25 @@ map_data$security_delay.percent = map_data$security_delay.counter/map_data$fligh
 map_data$delay.percent = map_data$delay.counter/map_data$flights.sum
 map_data$late_aircraft_delay.percent = map_data$late_aircraft_delay.counter/map_data$flights.sum
 
-map_data$not_cancelled.percent = 1- map_data$cancelled.counter/map_data$flights.sum
-map_data$not_delay.percent = 1- map_data$delay.counter/map_data$flights.sum
-map_data$not_nas_delay.percent = 1- map_data$nas_delay.counter/map_data$flights.sum
-map_data$not_carrier_delay.percent = 1- map_data$carrier_delay.counter/map_data$flights.sum
-map_data$not_weather_delay.percent = 1- map_data$weather_delay.counter/map_data$flights.sum
-map_data$not_security_delay.percent = 1- map_data$security_delay.counter/map_data$flights.sum
-map_data$not_delay.percent = 1- map_data$delay.counter/map_data$flights.sum
-map_data$not_late_aircraft_delay.percent = 1- map_data$late_aircraft_delay.counter/map_data$flights.sum
+map_data$cancelled.counter = NULL
+map_data$delay.counter = NULL
+map_data$nas_delay.counter = NULL
+map_data$carrier_delay.counter = NULL
+map_data$weather_delay.counter = NULL
+map_data$security_delay.counter = NULL
+map_data$delay.counter = NULL
+map_data$late_aircraft_delay.counter = NULL
+
+
+
+# map_data$not_cancelled.percent = 1- map_data$cancelled.counter/map_data$flights.sum
+# map_data$not_delay.percent = 1- map_data$delay.counter/map_data$flights.sum
+# map_data$not_nas_delay.percent = 1- map_data$nas_delay.counter/map_data$flights.sum
+# map_data$not_carrier_delay.percent = 1- map_data$carrier_delay.counter/map_data$flights.sum
+# map_data$not_weather_delay.percent = 1- map_data$weather_delay.counter/map_data$flights.sum
+# map_data$not_security_delay.percent = 1- map_data$security_delay.counter/map_data$flights.sum
+# map_data$not_delay.percent = 1- map_data$delay.counter/map_data$flights.sum
+# map_data$not_late_aircraft_delay.percent = 1- map_data$late_aircraft_delay.counter/map_data$flights.sum
 
 write.csv(map_data,'map_app/www/map_data.csv')
 
