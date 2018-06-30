@@ -11,13 +11,12 @@
 # rsconnect::deployApp('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
 
 setwd('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
-dest=read.csv('www/flight_dt_most_dest.csv')
-origin=read.csv('www/flight_dt_most_origin.csv')
+origin=read.csv('www/flight_map.csv')
 head(origin,10)
 # Define UI for application that draws a histogram
 origin <- dplyr::filter(origin, one > 0) %>% 
                     select(origin_city_name, origin_lon, origin_lat, one) %>% 
-  mutate_at(vars(origin_lat, origin_lon, one),funs(as.numeric)) %>% na.omit
+  mutate_at(vars(lat, lon, dest.sum, origin.sum),funs(as.numeric)) %>% na.omit
 
 library(leaflet)
 library(shiny)
@@ -25,11 +24,8 @@ library(shinydashboard)
 
 # Choices for drop-downs
 vars <- c(
-  "Is SuperZIP?" = "superzip",
-  "Centile score" = "centile",
-  "College education" = "college",
-  "Median income" = "income",
-  "Population" = "adultpop"
+  "Origin" = "origin.sum",
+  "Destination" = "dest.sum"
 )
 
 
@@ -44,7 +40,8 @@ ui <- dashboardPage(
     tags$div(title = "This input has a tool tip",
              selectInput(inputId = "city", 
                 label = "City", 
-                choices = sort(unique(origin$origin_city_name))))
+                choices = sort(unique(origin$origin_city_name)
+                			)))
   ),
   dashboardBody(
     leafletOutput("MapPlot1")
@@ -71,8 +68,8 @@ ui <- dashboardPage(
       m=leafletProxy("MapPlot1") %>% addTiles() 
       
       m %>% 
-        addCircles(lng = origin$origin_lon,
-                  lat = origin$origin_lat,
+        addCircles(lng = origin$lon,
+                  lat = origin$lat,
                   radius = origin$one)
 	 
       m %>%

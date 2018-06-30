@@ -49,15 +49,18 @@ myAgg <- function (formula, data, FUN, ..., subset, na.action = na.omit)
 setwd("~/PythonStuff/Project-ArmBop/Robert/Data/")
 
 flight_dt=read_csv('Merged_Flights.csv')
+names(flight_dt)
 keys=read_csv('Keys.csv')
 Ccodes=read_csv('Carrier Code.csv')
 
 Ccodes=subset(Ccodes, is.na(End))
 coordinates=read_csv('city_coordinates.csv')
 flight_dt=setDT(flight_dt)
+
 ```
 
 ```{r}
+print(keys)
 names(flight_dt)=tolower(names(flight_dt))
 names(flight_dt)
 flight_dt$x22 = NULL
@@ -86,33 +89,74 @@ flight_dt = subset(flight_dt, origin_city_name!= 'San Juan, PR' & dest_city_name
 flight_dt= subset(flight_dt, origin_city_name!='Christiansted, VI'&dest_city_name!='Christiansted, VI')
 
 flight_dt$one = 1
+head(flight_dt,15)
 ```
 
 ```{r}
+flight_dt=merge(flight_dt, company, by.x = "carrier", by.y = "Code", all.x = T)
+names(flight_dt)[names(flight_dt) == 'Name'] <- 'airline'
+
 names(flight_dt)
 head(flight_dt)
+#d[is.na(d)] <- 0
 ```
 
 ```{r}
 # Destination / Origin
 
-flight_dt_most_dest=myAgg(one ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
-names(flight_dt_most_dest)[names(flight_dt_most_dest) == 'one.sum'] <- 'dest.sum'
+counter=function(x) sum(x > 0, na.rm = TRUE)
+
+flight_dt_most_dest=myAgg(flights ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
+d_flight_dt_cancel=myAgg(cancelled ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
+d_flight_dt_delay=myAgg(dep_delay_new ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
+names(d_flight_dt_delay)[names(d_flight_dt_delay) == 'dep_delay_new.counter'] <- 'delay.counter'
+d_carrier_delay=myAgg(carrier_delay ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
+d_weather_delay=myAgg(weather_delay ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
+d_nas_delay=myAgg(nas_delay ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
+d_security_delay=myAgg(security_delay ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
+d_late_aircraft_delay=myAgg(late_aircraft_delay ~ dest_city_name+dest_lon+dest_lat, flight_dt, counter)
+flight_info_dest=Reduce(function(x, y) merge(x, y, all=TRUE), list(d_flight_dt_cancel, d_flight_dt_delay,d_nas_delay,d_carrier_delay,d_weather_delay,d_security_delay,d_late_aircraft_delay))
+#colnames(flight_info_dest) <- paste("dest", colnames(flight_info_dest), sep = "_")
+
+names(flight_info_dest)[names(flight_info_dest) == 'dest_dest_city_name'] <- 'dest_city_name'
+names(flight_info_dest)[names(flight_info_dest) == 'dest_dest_lon'] <- 'dest_lon'
+names(flight_info_dest)[names(flight_info_dest) == 'dest_dest_lat'] <- 'dest_lat'
+
+
+#names(flight_info_dest)[names(flight_info_dest) == 'dep_delay_new.counter'] <- 'dep_delay.counter'
 #flight_dt_most_dest
 
-flight_dt_most_origin=myAgg(one ~ origin_city_name, flight_dt, sum)
-names(flight_dt_most_origin)[names(flight_dt_most_origin) == 'one.sum'] <- 'origin.sum'
+flight_dt_most_origin=myAgg(flights ~ origin_city_name+origin_lat+origin_lon, flight_dt, sum)
+flight_dt_cancel=myAgg(cancelled ~ origin_city_name+origin_lon+origin_lat, flight_dt, counter)
+flight_dt_delay=myAgg(dep_delay_new ~ origin_city_name+origin_lon+origin_lat, flight_dt, counter)
+names(flight_dt_delay)[names(flight_dt_delay) == 'dep_delay_new.counter'] <- 'delay.counter'
+carrier_delay=myAgg(carrier_delay ~ origin_city_name+origin_lon+origin_lat, flight_dt, counter)
+weather_delay=myAgg(weather_delay ~ origin_city_name+origin_lon+origin_lat, flight_dt, counter)
+nas_delay=myAgg(nas_delay ~ origin_city_name+origin_lon+origin_lat, flight_dt, counter)
+security_delay=myAgg(security_delay ~ origin_city_name+origin_lon+origin_lat, flight_dt, counter)
+late_aircraft_delay=myAgg(late_aircraft_delay ~ origin_city_name+origin_lon+origin_lat, flight_dt, counter)
+flight_info_origin=Reduce(function(x,y)merge(x,y,all=TRUE), list(flight_dt_most_origin,flight_dt_cancel,flight_dt_delay,nas_delay,carrier_delay,weather_delay,security_delay,late_aircraft_delay))
+names(flight_info)
+write.csv(flight_origin,'map_app/www/origin_map.csv')
+
+colnames(flight_info_origin) <- paste("origin", colnames(flight_info_origin), sep = "_")
+names(flight_info_dest)[names(flight_info_dest) == 'dest_dest_city_name'] <- 'dest_city_name'
+names(flight_info_dest)[names(flight_info_dest) == 'dest_dest_lon'] <- 'dest_lon'
+names(flight_info_dest)[names(flight_info_dest) == 'dest_dest_lat'] <- 'dest_lat'
+
+names(flight_info_origin)[names(flight_info_origin) == 'origin_origin_lat'] <- 'origin_lat'
+names(flight_info_origin)[names(flight_info_origin) == 'origin_origin_lon'] <- 'origin_lon'
+names(flight_info_origin)[names(flight_info_origin) == 'origin_origin_city_name'] <- 'origin_city_name'
+
+#flight_info=merge(flight_dt_cancel,flight_dt_delay)
 #flight_dt_most_origin
 
-flight_dt_most=merge(flight_dt_most_dest, flight_dt_most_origin, by.x = 'dest_city_name', by.y = 'origin_city_name', all = T)
+flight_dt_most=merge(flight_info_dest, flight_info_origin, by.x = c('dest_city_name','dest_lon','dest_lat'), by.y = c('origin_city_name','origin_lon','origin_lat'), all=T)
 names(flight_dt_most)[names(flight_dt_most) == 'dest_city_name'] <- 'city_name'
 names(flight_dt_most)[names(flight_dt_most) == 'dest_lon'] <- 'lon'
 names(flight_dt_most)[names(flight_dt_most) == 'dest_lat'] <- 'lat'
 
-flight_dt_most
-
-write.csv(flight_dt_most,'map_app/www/flight_dt_most.csv')
-
+write.csv(flight_dt_most,'map_app/www/flight_map.csv')
 ```
 
 ```{r}
@@ -134,7 +178,7 @@ drops <- c("dest_lon","dest_lat", 'origin_lat', 'origin_lon', 'late_aircraft_del
 flight_df=as.data.frame(flight_dt)
 tiny_flights=flight_df[ , !(names(flight_df) %in% drops)]
 tiny_flights=merge(tiny_flights, company, by.x = "carrier", by.y = "Code", all.x = T)
-names(tiny_flights)
+head(tiny_flights)
 str(tiny_flights)
 
 delayed_flights=aggregate(one ~ dest_city_name+dest_lon+dest_lat, flight_dt, sum)
