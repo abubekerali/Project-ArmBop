@@ -7,19 +7,16 @@
 #    http://shiny.rstudio.com/
 #
 
-# library(rsconnect)
-# rsconnect::deployApp('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
-
 library(leaflet)
-library(shiny)
 library(shinydashboard)
+library(shiny)
 library(RColorBrewer)
 library(scales)
 library(lattice)
 library(dplyr)
 library(leaflet.minicharts)
 
-setwd('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
+#setwd('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
 origin=read.csv('www/origin_map.csv')
 origin$X=NULL
 str(origin)
@@ -33,7 +30,6 @@ destination$type = 'destination'
 map_data=rbind(destination, origin)
 str(map_data)
 
-# Define UI for application that draws a histogram
 map_data <- dplyr::filter(map_data, flights.sum > 0) %>% mutate_at(vars(lat, lon, flights.sum, cancelled.counter, delay.counter, nas_delay.counter,carrier_delay.counter,weather_delay.counter,security_delay.counter,late_aircraft_delay.counter),funs(as.numeric)) %>% na.omit
 
 map_data$cancelled.percent = map_data$cancelled.counter/map_data$flights.sum
@@ -54,6 +50,9 @@ map_data$not_security_delay.percent = 1- map_data$security_delay.counter/map_dat
 map_data$not_delay.percent = 1- map_data$delay.counter/map_data$flights.sum
 map_data$not_late_aircraft_delay.percent = 1- map_data$late_aircraft_delay.counter/map_data$flights.sum
 
+
+# Define UI for application that draws a map
+
 # Choices for drop-downs
 vars <- c(
   "Canceled Flights" = "cancelled.percent",
@@ -61,7 +60,7 @@ vars <- c(
   "National Aviation System Delay" = "nas_delay.percent",
   "Carrier Delay" = "carrier_delay.percent",
   "Weather Delay" = "weather_delay.percent",
-  "Securit Delay" = "security_delay.percent",
+  "Security Delay" = "security_delay.percent",
   "Late Aircraft Delay" = "late_aircraft_delay.percent")
 
 ui <- dashboardPage(
@@ -78,41 +77,42 @@ ui <- dashboardPage(
 ),
   dashboardBody(
     tags$style(type = "text/css", "#MapPlot1 {height: calc(100vh - 80px) !important;}"),
-    # sliderInput(inputId = "flights", 
-    #             label = "Flights Originating", 
-    #             min = -50, max = 15000, value = 0, step = 500),
     leafletOutput("MapPlot1")))
   
 server = function(input, output) {
     output$MapPlot1 <- renderLeaflet({
      leaflet() %>% addProviderTiles("providers$Esri.NatGeoWorldMap") %>% 
-    	setView(lng = -93.85, lat = 37.45, zoom = 4) 
-     m=leafletProxy("MapPlot1") %>% addTiles() 
- 
- observe({ type <- input$type
+    	setView(lng = -93.85, lat = 37.45, zoom = 4) })
+     m=leafletProxy("MapPlot1") %>% addTiles()
+	colors <- c("#4fc13c", "#cccccc")
+
+     observe({
+	      type <- input$type
 	      city <- input$city
 	      variable <- input$variable
-	      #inverse <- (1 - variable) 
-	 pal <- colorBin("YlOrRd", domain = as.numeric(input$variable))
-	radius <- map_data$flights.sum / max(map_data$flights.sum) * 300000
+	      
+	pal <- colorNumeric("YlOrRd", domain = as.numeric(map_data[[variable]]))
+	radius <- map_data[[variable]] / max(map_data$flights.sum) * 20000000
 	
-	m %>% clearShapes() %>%
-      addCircles(lng = map_data$lon,
+	m = m %>% clearShapes() %>% clearMarkers() %>%
+        addCircleMarkers(lng = map_data$lon,
                   lat = map_data$lat,
-                  radius = radius,
-      		   fillOpacity = 0.4,
-      		   fillColor = ~pal(as.numeric(input$variable))
+                  radius = radius
+      		 #,fillColor = ~pal(as.numeric(variable))
       		 )
-})
+
       m %>% addMeasure(
 		    position = "bottomleft",
 		    primaryLengthUnit = "miles",
 		    primaryAreaUnit = "sqmiles",
 		    activeColor = "#3D535D",
 		    completedColor = "#7D4479")
-
+   
   })
 }
 
 shinyApp(ui=ui,server=server,  options = list(height = 600))
+
+library(rsconnect)
+rsconnect::deployApp('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
 
