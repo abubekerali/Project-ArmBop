@@ -1,4 +1,4 @@
-var dataset = {
+var airportdataset = {
   "type": "FeatureCollection",
   "features": [
     {
@@ -119777,4 +119777,4 @@ var dataset = {
       }
     }
   ]
-}
+};

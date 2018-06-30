@@ -1,0 +1,43 @@
+/* remove default margin and padding from body */
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* set map, body, and html to 100% of the screen size */
+  #map,
+  body,
+  html {
+    height: 100%;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header "
+      "section aside"
+      "footer footer";
+  }
+  .navbar-brand {
+    margin-left: 10%;
+    padding: 0.5%;
+    
+  }
+  infoheader{
+      font-size: 11;
+  }
+  .navbar-brand:hover {
+    color: rgb(213, 250, 252);
+    background: rgb(93, 221, 238);
+    box-shadow: 0px 0px 1px 1px rgba(93, 221, 238, 0.81);
+  }
+  
+  .navbar-collapse {
+    margin-right: 5%;
+  }
+  
+  .nav-item a:hover {
+    background: rgb(198, 222, 233);
+    box-shadow: 0px 0px 1px 1px rgba(198, 222, 233, 0.81);
+  }  
