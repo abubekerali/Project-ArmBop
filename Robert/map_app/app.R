@@ -88,5 +88,5 @@ server = function(input, output) {
   })
 })
 
-library(rsconnect)
-rsconnect::deployApp()
+# library(rsconnect)
+# rsconnect::deployApp()
