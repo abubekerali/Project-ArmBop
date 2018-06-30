@@ -59,7 +59,7 @@ server = function(input, output) {
 
      observe({
 	      type <- input$type
-	      city <- input$city_name
+	      city_name <- input$city_name
 	      variable <- input$variable
 	      
 	pal <- colorNumeric("YlOrRd", domain = as.numeric(map_data[[variable]]))
@@ -69,7 +69,9 @@ server = function(input, output) {
         addCircleMarkers(lng = map_data$lon,
                   lat = map_data$lat,
                   radius = radius
-      		 #,fillColor = ~pal(as.numeric(variable))
+      #   			  ,
+      # 		 ,fillColor = ~pal(as.numeric(variable))
+      # 		 label = ~as.character(map_data[[city_name]])
       		 )
       m %>% addMeasure(
 		    position = "bottomleft",
@@ -77,10 +79,14 @@ server = function(input, output) {
 		    primaryAreaUnit = "sqmiles",
 		    activeColor = "#3D535D",
 		    completedColor = "#7D4479")
-      
-  #     m %>% addTiles() %>%
+  #  
+  #     leaflet() %>% addTiles() %>%
   # addMarkers(~map_data$lon, ~map_data$lat, popup = ~htmlEscape(map_data$city_name)
   # 		 )
 
+
   })
 })
+
+library(rsconnect)
+rsconnect::deployApp()
