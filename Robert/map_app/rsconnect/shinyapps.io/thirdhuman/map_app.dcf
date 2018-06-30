@@ -5,6 +5,6 @@ account: thirdhuman
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 370628
-bundleId: 1457578
+bundleId: 1457598
 url: https://thirdhuman.shinyapps.io/map_app/
-when: 1530347606.72838
+when: 1530349193.47101
