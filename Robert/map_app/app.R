@@ -7,8 +7,8 @@
 #    http://shiny.rstudio.com/
 #
 
-library(rsconnect)
-rsconnect::deployApp('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
+# library(rsconnect)
+# rsconnect::deployApp('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
 
 setwd('/Users/rorr/PythonStuff/Project-ArmBop/Robert/map_app')
 dest=read.csv('www/flight_dt_most_dest.csv')
@@ -23,20 +23,30 @@ library(leaflet)
 library(shiny)
 library(shinydashboard)
 
+# Choices for drop-downs
+vars <- c(
+  "Is SuperZIP?" = "superzip",
+  "Centile score" = "centile",
+  "College education" = "college",
+  "Median income" = "income",
+  "Population" = "adultpop"
+)
+
 
 shinyApp(
 ui <- dashboardPage(
-  dashboardHeader(),
-  dashboardSidebar(),
-  dashboardBody(
-    tags$style(type = "text/css", "#MapPlot1 {height: calc(100vh - 80px) !important;}"),
+  dashboardHeader(title = 'United States Flight Map'),
+  dashboardSidebar(
+  	    tags$style(type = "text/css", "#MapPlot1 {height: calc(100vh - 40px) !important;}"),
     sliderInput(inputId = "flights", 
                 label = "Flights Originating", 
                 min = -50, max = 15000, value = 0, step = 500),
     tags$div(title = "This input has a tool tip",
              selectInput(inputId = "city", 
                 label = "City", 
-                choices = sort(unique(origin$origin_city_name)))),
+                choices = sort(unique(origin$origin_city_name))))
+  ),
+  dashboardBody(
     leafletOutput("MapPlot1")
   )
 ),
@@ -46,7 +56,7 @@ ui <- dashboardPage(
     output$MapPlot1 <- renderLeaflet({
      leaflet() %>% 
        addProviderTiles("providers$Esri.NatGeoWorldMap") %>% 
-        setView(lng = -100, lat = 50, zoom = 2)
+        setView(lng = -100, lat = 50, zoom = 3)
     })
     
     observe({
@@ -54,9 +64,9 @@ ui <- dashboardPage(
       flights <- input$flights
       city <- input$city
       
-      # sites <- origin %>% 
-      #   filter(findInterval(origin$one, c(flights - 250, flights + 250)) == 1 &
-      #                       origin$origin_city_name %in% city)
+      sites <- origin %>%
+        filter(findInterval(origin$one, c(flights - 250, flights + 250)) == 1 &
+                            origin$origin_city_name %in% city)
       
       m=leafletProxy("MapPlot1") %>% addTiles() 
       
@@ -75,7 +85,7 @@ ui <- dashboardPage(
 
     })
   },
-  options = list(height = 800)
+  options = list(height = 600)
 )
 
 

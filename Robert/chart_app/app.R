@@ -1,10 +1,4 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
+# Flight Charts
 #
 
 library(shiny)
@@ -16,7 +10,7 @@ library(shinydashboard)
 ui <- fluidPage(
    
    # Application title
-   titlePanel("Old Faithful Geyser Data"),
+   titlePanel("Flight Charts"),
    
    # Sidebar with a slider input for number of bins 
    sidebarLayout(
