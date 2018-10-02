@@ -22,6 +22,6 @@
 * Jquery 
 * R Shiny
 * GitHub:  https://github.com/Thirdhuman/Project-ArmBop.git
-
+The result is on the link below
 http://github.com - automatic!
-[GitHub](http://github.com)
+[GitHub](https://github.com/abubekerali/Project-ArmBop/blob/master/For_Score/Final_Report.pdf)
