@@ -20,11 +20,12 @@
 * MongoDB or MySQL 
 * JavaScript
 * Jquery 
+* R Shiny
 * GitHub:  https://github.com/Thirdhuman/Project-ArmBop.git
 
 High-Level Design
 DEVELOPMENT APPROACH
 • Develop a list of questions that we want to answer
 
-![Analysis](Screenshots/Shiny - Basic Image.png)
+![Analysis](/Screenshots/Shiny - Basic Image.png)
 Format: ![Alt Text](url)
