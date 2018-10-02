@@ -26,5 +26,5 @@ High-Level Design
 DEVELOPMENT APPROACH
 • Develop a list of questions that we want to answer
 
-![Analysis](/For_Score/Final_Report.pdf)
+![Analysis](/Screenshots/Shiny - Basic Image.png)
 Format: ![Alt Text](url)
